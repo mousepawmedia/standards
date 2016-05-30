@@ -1,0 +1,5 @@
+{
+	"phabricator.uri" : "https://hawksnest.ddns.net:8446",
+	"repository.callsign" : "STD",
+	"https.blindly-trust-domains" : ["hawksnest.ddns.net"]
+}
