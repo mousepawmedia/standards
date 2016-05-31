@@ -25,8 +25,8 @@ Standards Board
 Standards Format
 -------------
 The standards are all written in RestructuredText format,
-to be compatible with Sphinx. The makefile in the root of
-the repository may be used to generate the documents.
+to be compatible with Sphinx. The root of the repository contains
+a makefile which can be used to generate the documents.
 
 On a Unix system, you can use the following commands:
 
