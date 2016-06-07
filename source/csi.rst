@@ -111,7 +111,8 @@ comments should be used (if available in the language.)
 
 It is recommended that each line in a multi-line comment start with an
 aligned asterisk, as this improves the readability of the comment.
-::
+
+.. code-block:: c++
 
     /* This is a multi-line
      * comment with the
@@ -127,7 +128,8 @@ CSI comments should not be confused with docstrings (see CSI vs.
 Documentation). Line comments should be used for CSI. Placing the
 comment above the code in question is recommended. Inline comments
 are prone to causing an overrun of PEP8's line length limits.
-::
+
+.. code-block:: c++
 
     # This is a CSI comment, describing intent.
     doSomething()
@@ -149,7 +151,9 @@ the code might be explained to a newcomer. It should be free of
 language-specific syntax as much as practical. This enables non-programmers
 (and programmers from other languages) to understand the code more easily.
 
-**BAD**::
+**BAD**
+
+.. code-block:: c++
 
     // set box_width to equal the floor of items and 17
     int items_per_box = floor(items/17)
@@ -160,7 +164,9 @@ term "floor" - if a reader is unfamiliar with this term, they will have
 to look it up just to understand the comment - a situation that we should
 avoid as much as possible.
 
-**BETTER**::
+**BETTER**
+
+.. code-block:: c++
 
     // Find how many times 17 goes into y, without a remainder.
     int items_per_box = floor(items/17);
@@ -173,7 +179,9 @@ However, this comment is still not true CSI, as it is only stating *WHAT*,
 and not *WHY*. Furthermore, the self-commented code makes this redundant
 to an average C++ developer.
 
-**BEST**::
+**BEST**
+
+.. code-block:: c++
 
     /* Divide our items among 17 boxes.
      * We'll deal with the leftovers later. */
@@ -187,7 +195,7 @@ If you imagine a lone maintainer looking to change this code to divide
 the items among any number of boxes, the comment would make his change
 obvious, even with a minimal understanding of the code...
 
-::
+.. code-block:: c++
 
     /* Divide our items among the specified number of boxes.
      * We'll deal with the leftovers later. */
@@ -199,7 +207,9 @@ CSI comments should specifically outline the programmer's logic and
 reasoning. The more left unsaid and undefined, the less effective
 the comment.
 
-**BAD**::
+**BAD**
+
+.. code-block:: c++
 
     // This tells us how much we can handle.
     int maximum_range = 27;
@@ -207,7 +217,9 @@ the comment.
 This is too vague, and redundant given the variable name. (I'm assuming this
 isn't being clarified by immeidately prior comments.)
 
-**BETTER**::
+**BETTER**
+
+.. code-block:: c++
 
     // This tells us the maximum workable integer
     int maximum_range = 27;
@@ -215,7 +227,9 @@ isn't being clarified by immeidately prior comments.)
 This is still vague. If we didn't know exactly what "maximum workable integer"
 meant in this context, we'd still be confused. (Again, assuming no context.)
 
-**BEST**::
+**BEST**
+
+.. code-block:: c++
 
     // Anything larger than this integer causes the algorithm to return 0.
     int maximum_range = 27;
@@ -235,13 +249,17 @@ yourself to be totally serious.
 That said, don't be crass for crass' sake, as it may drive away others,
 detracting from the whole point of this standard.
 
-**ACCEPTABLE**::
+**ACCEPTABLE**
+
+.. code-block:: c++
 
     /* We return -1 instead of 0 to avoid a
      * math error in the upcoming division. */
     return -1;
 
-**BETTER**::
+**BETTER**
+
+.. code-block:: c++
 
     /* We return -1 instead of 0 to keep the
      * math gremlins happy in the upcoming divison. */
@@ -256,7 +274,9 @@ is yet one more thing the reader must keep track of.
 
 The following would be good in a short function.
 
-**EXAMPLE**::
+**EXAMPLE**
+
+.. code-block:: c++
 
     /* count tracks the number of times the word “Bah”
      * appears in the given text. */
@@ -267,7 +287,9 @@ The following would be good in a short function.
 
 The following would be better in a very large function.
 
-**EXAMPLE**::
+**EXAMPLE**
+
+.. code-block:: c++
 
     /* count tracks the number of times the word “Bah”
      * appears in the given text.
@@ -286,7 +308,9 @@ debugging. Appropriate brevity comes with practice.
 Bear this in mind: a single comment should state the **purpose** of a line or
 block of code in plain English.
 
-**BAD**::
+**BAD**
+
+.. code-block:: c++
 
     /* Search through the list of integers we got from the user
      * and find the number of integers that are divisible by
@@ -306,7 +330,9 @@ which slows us down. We now have to stop and determine what
 ``sum += nums[i]`` is doing, based on the big comment. It is also
 lengthier than it needs to be.
 
-**BEST**::
+**BEST**
+
+.. code-block:: c++
 
     // Store the running sum.
     int sum = 0;
@@ -345,7 +371,9 @@ conclusion in a given instance, ask yourself whether someone entirely
 unfamiliar with the syntax and program would immediately know what the
 *intent* was.
 
-**OBVIOUS**::
+**OBVIOUS**
+
+.. code-block:: python
 
     # Greet the user.
     print(welcome_message + username + ".")
@@ -353,7 +381,9 @@ unfamiliar with the syntax and program would immediately know what the
 This line of Python code is so obvious, we could choose to omit the comment
 and still be CSI-compliant.
 
-**MOSTLY-OBVIOUS**::
+**MOSTLY-OBVIOUS**
+
+.. code-block:: python
 
     # Display the status or error code from the rendering engine.
     print(get_status(render_engine))
@@ -363,7 +393,9 @@ function ``get_status()`` queries the object's status, and returns it as
 a string. Even if we surmised that much, we might not know that error codes
 are returned here as well (perhaps we're looking for that line!)
 
-**NON-OBVIOUS**::
+**NON-OBVIOUS**
+
+.. code-block:: python
 
     # Display the result of the final step of calculation.
     print(str(foo%bar*baz))
@@ -385,7 +417,9 @@ In these examples, we'll demonstrate combining CSI with a Doxygen-compatible
 doc comment. To that aim, the comments below contain the names of the items
 in question, in anticipation of the resultant autodocs.
 
-**VARIABLE/CONSTANT**::
+**VARIABLE/CONSTANT**
+
+.. code-block:: c++
 
     /** The SILVER_INTEREST_RATE constant stores the
      * monthly interest rate for Silver savings accounts.
@@ -396,7 +430,9 @@ Preceding a variable or constant (especially the latter), we should state
 its intent - its purpose for existing. While a good variable or constant name
 tells us **what it is**, the comment should state **why it exists**.
 
-**FUNCTION**::
+**FUNCTION**
+
+.. code-block:: c++
 
     /** The countBah function determines how many times
      * “BAH” appears in a given string.
@@ -427,7 +463,8 @@ reading the code if they want to follow the entire call stack for a particular
 function or feature. For example, if a game engine has a long process for
 generating an animated character on the screen, the beginning of this process
 - such as the function that initializes it - should have the comment...
-::
+
+.. code-block:: c++
 
     // ENTRY: Generate Animated Character
 
@@ -447,7 +484,9 @@ Commenting Out Code
 It can be very easy to confuse a regular comment and commented out code.
 There are two ways to clarify this action.
 
-**EXPLANATION METHOD**::
+**EXPLANATION METHOD**
+
+.. code-block:: c++
 
     // It would seem that float is better for this task.
     //int foo = 187;
@@ -463,7 +502,9 @@ and follow changes in program logic.
 This method is ideal in languages where double-commenting (below) is
 not possible.
 
-**DOUBLE COMMENT METHOD**::
+**DOUBLE COMMENT METHOD**
+
+.. code-block:: c++
 
     ////refreshEverything();
 
@@ -471,7 +512,9 @@ We can “double-comment” out the code. This is probably ideal in situations
 where the commenting-out is temporary, and you don't want to have to write
 an explanation.
 
-**COMBINATION METHOD**::
+**COMBINATION METHOD**
+
+.. code-block:: c++
 
     // Just testing if we really need this function call at all.
     ////refreshEverything();
@@ -487,7 +530,8 @@ On the top of the document, the programmer should ideally list the project name
 and version, module/class name and description, date last updated,
 and authors (optionally). This may be adjusted to comply with documentation
 needs and individual standards.
-::
+
+.. code-block:: c++
 
     /* Dohickey Class [Some Epic Project]
      * Version: 1.0
@@ -503,7 +547,8 @@ Immediately following in a separate multi-line comment, include copyright
 and licensing terms. Because many licenses are extremely long, placing the
 license comment separate from the main top-of-document comment allows for
 the license to be collapsed in most code-folding-capable IDEs.
-::
+
+.. code-block:: c++
 
     /* LICENSE
      * Copyright (C) My Really Cool Software Company.
