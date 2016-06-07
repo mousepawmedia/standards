@@ -66,10 +66,12 @@ Comments
 - Use CSI Commenting Standard.
 - Use ``//`` and ``/* ... */`` for CSI comments.
 - Use ``///`` and ``/** ... */`` for doc comments.
+
   - Each parameter description in doc comments should be preceded by ``\param``
     on a new line.
   - The return description in doc comments should be preceded by ``\return``
     on a new line.
+    
 - Use either ``////`` or ``/* ... */`` for commenting out. If the commented-out
   code will be sent up to the repository, include a CSI comment explaining
   why the code is commented out.

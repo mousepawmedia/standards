@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'MousePaw Games Standards'
-copyright = '2016 MousePaw Games. All Rights Reserved.'
+copyright = '2016 MousePaw Games. Licensed under CC-BY-SA 4.0'
 author = 'MousePaw Games'
 
 # The version info for the project you're documenting, acts as replacement for

@@ -53,6 +53,9 @@ Pull requests to this repository are not accepted. If
 you wish to propose a change, email your patch to us
 at the address above.
 
+For more information about contributing to MousePaw Games
+projects, see [mousepawgames.com/opensource][2].
+
 License
 -------------
 The MousePaw Games Standards are made available via the
