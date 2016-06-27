@@ -41,13 +41,11 @@ Python
 ------------------------------------------------
 **Standard:** `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_
 
-**Version:** `2.7.11 <https://www.python.org/downloads/release/python-2711/>`_,
-`3.5.0 <https://www.python.org/downloads/release/python-350/>`_
+**Version:** `3.5.1 <https://www.python.org/downloads/release/python-351/>`_
 
-**Why Two Versions?** Python 2 is still important, especially when using
-many Python libraries (including Kivy). However, we should aim to make our code
-Python 2/3 cross-compatible whenever possible. PEP8 compliance will help
-us do that.
+**What About Python 2?** Python 2 is still important, especially for some
+support targets. However, we should aim to make our code Python 2/3
+cross-compatible whenever possible. PEP8 compliance will help us do that.
 
 XML
 ------------------------------------------------
