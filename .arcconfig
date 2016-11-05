@@ -1,5 +1,4 @@
 {
-	"phabricator.uri" : "https://hawksnest.ddns.net:8446",
+	"phabricator.uri" : "https://phabricator.mousepawmedia.net",
 	"repository.callsign" : "STD",
-	"https.blindly-trust-domains" : ["hawksnest.ddns.net"]
 }
