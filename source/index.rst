@@ -14,7 +14,7 @@ made freely available for the benefit of the open source
 community, and the programming community at large.
 
 You can access the source files for these standards from
-the `Github mirror <https://github.com/mousepawgames/standards>`_.
+the `GitHub mirror <https://github.com/mousepawgames/standards>`_.
 For more information about contributing, see `Feedback`_.
 
 Public Standards
