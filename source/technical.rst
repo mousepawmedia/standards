@@ -8,20 +8,16 @@ C++
 ------------------------------------------------
 **Standard:** `C++14 ISO Standard <https://isocpp.org/std/the-standard>`_
 
-**Compiler:** `GNU GCC 5 <https://gcc.gnu.org/gcc-5/changes.html>`_
+**Compiler:** `Clang 3 (3.8 or later) <http://releases.llvm.org/3.8.0/tools/clang/docs/ReleaseNotes.html>`_
+or `GNU GCC 5 (5.4 or later) <https://gcc.gnu.org/gcc-5/changes.html>`_
 
-**Windows Compiler:** `MSYS2 <http://msys2.github.io/>`
+**Windows Compiler:** `MSYS2 <http://msys2.github.io/>`_
 
 CSS
 ------------------------------------------------
-**Standard:** `W3C CSS2-20110607 <http://www.w3.org/TR/2011/REC-CSS2-20110607/>`_
+**Standard:** `W3C CSS <https://www.w3.org/Style/CSS/>`_
 
-**Version:** CSS2
-
-**What About CSS3?** There are many issues with early adoption for production.
-Though we have transitioned to HTML5, we will continue to use CSS2 until all
-W3C CSS3 standards reach RECOMMENDED status. Monitor progress
-`here <http://www.w3.org/standards/techs/css>`_.
+**Version:** CSS3
 
 ECMAScript (Javascript)
 ------------------------------------------------
@@ -33,7 +29,7 @@ Encoding
 
 HTML
 ------------------------------------------------
-**Standard:** `W3C HTML5-20141028 <http://www.w3.org/TR/2014/REC-html5-20141028/>`_
+**Standard:** `W3C HTML5 <https://www.w3.org/html/>`_
 
 **Version:** HTML5
 
@@ -41,7 +37,7 @@ Python
 ------------------------------------------------
 **Standard:** `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_
 
-**Version:** `3.5.1 <https://www.python.org/downloads/release/python-351/>`_
+**Version:** `3.6.0 <https://www.python.org/downloads/release/python-360/>`_
 
 **What About Python 2?** Python 2 is still important, especially for some
 support targets. However, we should aim to make our code Python 2/3
@@ -49,22 +45,28 @@ cross-compatible whenever possible. PEP8 compliance will help us do that.
 
 XML
 ------------------------------------------------
-**Standard:** `W3C XML-20081126 (XML 1.0 5e) <http://www.w3.org/TR/2008/REC-xml-20081126/>`_
+**Standard:** `W3C XML <https://www.w3.org/XML/>`_
 
 **Version:** 1.0
 
 Libraries
 ================================================
 
-+-------------------------------------------------+------------------------+---------+---------+--------------------+-----------+
-| Library                                         | Use                    | Version | Binding | Package            | License   |
-+=================================================+========================+=========+=========+====================+===========+
-| `CPGF <http://www.cpgf.org/>`_                  | Signals, Introspection | 1.5.6   | C++     | (See website)      | Apache v2 |
-+-------------------------------------------------+------------------------+---------+---------+--------------------+-----------+
-| `Xerces <https://xerces.apache.org/xerces-c/>`_ | XML Parsing            | 3.1     | C++     | ``libxerces-c3.1`` | Apache v3 |
-+-------------------------------------------------+------------------------+---------+---------+--------------------+-----------+
-| `Kivy <https://kivy.org/>`_                     | GUI                    | 1.9     | Python2 | ``python-kivy``    | MIT       |
-+-------------------------------------------------+------------------------+---------+---------+--------------------+-----------+
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| Library                                         | Use                    | Version | Binding | Source                      | License   |
++=================================================+========================+=========+=========+=============================+===========+
+| `Cinder <http://www.libcinder.org>`_            | Media, Input, etc.     | 1.5.6   | C++     | Repo: ``cinder-git``        | BSD-3     |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| `CPGF <http://www.cpgf.org/>`_                  | Signals, Introspection | 1.5.6   | C++     | Repo: ``lib-git``           | Apache v2 |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| `Eigen <http://eigen.tuxfamily.org/>`_          | Linear algebra         | 3.3.1   | C++     | Repo: ``lib-git``           | MPL2      |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| `Opus <https://opus-codec.org/>`_               | Audio codec            | 1.3.1   | C++     | Repo: ``lib-git``           | BSD-3     |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| `Kivy <https://kivy.org/>`_                     | GUI                    | 1.9.2   | Python  | PPA: ``ppa:kivy-team/kivy`` | MIT       |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
+| `pugixml <http://pugixml.org/>`_                | XML parsing            | 1.8     | C++     | Repo: ``lib-git``           | MIT       |
++-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
 
 Operating System Support Targets
 ================================================
@@ -140,10 +142,10 @@ Support Goals:
 | SoaS                  | 1 GB    | 3      |
 +-----------------------+---------+--------+
 
-.. NOTE::We want to get a version of OSR working on a version of Linux that
-  runs entirely from a USB stick. We can target newer computers with this
-  (i.e. RAM-only). The idea is to make a "bootable" version of the game for
-  users who have Windows 8/8.1/10.
+..  NOTE::We want to get a version of OSR working on a version of Linux that
+    runs entirely from a USB stick. We can target newer computers with this
+    (i.e. RAM-only). The idea is to make a "bootable" version of the game for
+    users who have Windows 8/8.1/10.
 
 **For support consideration:**
 

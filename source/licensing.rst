@@ -36,6 +36,7 @@ usable as well.
 - `MIT License <https://opensource.org/licenses/MIT>`_
 - `University of Illinois/NCSA Open Source License <https://opensource.org/licenses/NCSA>`_
 - `SIL Open Font License <https://opensource.org/licenses/OFL-1.1>`_ (for fonts)
+- `zlib/libpng <https://opensource.org/licenses/Zlib>`_
 
 .. NOTE:: The `GNU Lesser General Public License v3 (LGPLv3) <https://opensource.org/licenses/LGPL-3.0>`_
    is usable if we are only linking against the LGPLv3-licensed library. Under
@@ -69,8 +70,8 @@ through our company's activity. We want to encourage the widespread and
 dominant adoption of open source software and open standards, especially
 in the sphere of education.
 
-We do NOT endorse the stance of Free Software Foundation or the intent
-behind its licenses.
+We do NOT endorse the strict anti-proprietary stance of Free Software Foundation
+or said intent behind its licenses.
 
 Content Licenses
 ===============================================
@@ -113,8 +114,8 @@ but do not want it used in commercial projects. This license also accommodates
 use in schools, but it additionally allows for the material to be used
 creatively.
 
-We use `Creative Commons Attribution 4.0 <https://creativecommons.org/licenses/by/4.0>`_
-(CC-BY-4.0) when we want to allow anyone to use the content freely, for any
+We use `Creative Commons Attribution 4.0 (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0>`_
+when we want to allow anyone to use the content freely, for any
 project they want, even commercially. Because we rely so heavily on this
 license for inbound content, it is only fair that we give back some content
 as well.

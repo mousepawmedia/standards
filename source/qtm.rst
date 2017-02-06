@@ -32,26 +32,38 @@ Measures
 
 Priority
 ---------------------------------
-Priority refers to how soon this task needs to be accomplished. A task can be a low priority temporarily, and yet still have a high Gravity.
+Priority refers to how soon this task needs to be accomplished. A task can be
+a low priority temporarily, and yet still have a high Gravity.
 
-- **p0: Wishlist**
-- **p1: Eventual**
-- **p2: Soonish**
-- **p3: Normal**
-- **p4: Important**
-- **p5: Immediate**
+- **``p0``: Wishlist.** Tasks that don't necessarily need to be completed.
+- **``p1``: Eventual.** Lowest priority tasks.
+- **``p2``: Soonish.** Tasks that don't necessarily need to be completed in
+  the current development cycle.
+- **``p3``: Normal.**  Tasks that should be completed in the current development
+  cycle, after current ``p4`` and ``p5`` tasks.
+- **``p4``: Important.** The usual top priority, and whatever is currently
+  being worked on.
+- **``p5``: Immediate.** Reserved for escalating a task above all other
+  priorities; "drop everything and do this!"
 
 Gravity (Importance)
 -----------------------------------
-A task's Gravity is its importance to ensuring the project is stable, easy to use, and accomplishes all of its intended goals.
+A task's Gravity is its importance to ensuring the project is stable,
+easy-to-use, and accomplishes all of its intended goals.
 
-- **g0: Wishlist**
-- **g1: Trivial**
-- **g2: Minor**
-- **g3: Major**
-- **g4: Significant**
-- **g5: Critical**
-- **gΣ: Sum of all subtasks.**
+This measure is especially useful when performing a "featurectomy" (removing
+features from a project to expidite it's completion.)
+
+- **``g0``: Wishlist.** Proposed and unconfirmed tasks.
+- **``g1``: Trivial.** "Would be nice" tasks; these take backseat to the
+  completion of all other tasks. First to be cut.
+- **``g2``: Minor.** "Polishing" tasks, bells and whistles. Ideally should be
+  completed, but can be cut if necessary.
+- **``g3``: Major.** Non-essential, but really should be completed if possible.
+- **``g4``: Significant.** Must be completed, only cut if desperate.
+- **``g5``: Critical.** Project can't exist without. Must be completed, period.
+- **``gΣ``: Sum of all subtasks.** Use this for umbrella tasks that don't
+  have a gravity of their own.
 
 Friction (Available Help)
 -----------------------------------
@@ -65,17 +77,17 @@ The following table shows how this could work, rating each aid as Full, Some
 +--------+--------------+----------+-------------+-----------+------------+
 | Rating | Name         | Docs     | Code        | Tutorials | Precedence |
 +========+==============+==========+=============+===========+============+
-| f0     | Freeway      | Full     | Full        | Full      | Full       |
+| ``f0`` | Freeway      | Full     | Full        | Full      | Full       |
 +--------+--------------+----------+-------------+-----------+------------+
-| f1     | Street       | Full     | Full        | Some      | Some       |
+| ``f1`` | Street       | Full     | Full        | Some      | Some       |
 +--------+--------------+----------+-------------+-----------+------------+
-| f2     | Back Road    | Full     | Some/Little | Little    | Little     |
+| ``f2`` | Back Road    | Full     | Some/Little | Little    | Little     |
 +--------+--------------+----------+-------------+-----------+------------+
-| f3     | Trail        | Some     | Little      | None      | Little     |
+| ``f3`` | Trail        | Some     | Little      | None      | Little     |
 +--------+--------------+----------+-------------+-----------+------------+
-| f4     | Trailblazing | Little   | None        | None      | None       |
+| ``f4`` | Trailblazing | Little   | None        | None      | None       |
 +--------+--------------+----------+-------------+-----------+------------+
-| f5     | Bushwhacking | None     | None        | None      | None       |
+| ``f5`` | Bushwhacking | None     | None        | None      | None       |
 +--------+--------------+----------+-------------+-----------+------------+
 
 Relativity/Black Hole Probability (Uncertainty)
@@ -88,12 +100,12 @@ how much time the task will take.
 A good rule of thumb: you will know the relativity within the first hour of
 working on a task.
 
-- **r0: No chance of black hole.** No relativity.
-- **r1: Low black hole probability.** Low relativity.
-- **r2: Moderate black hole probability.** Moderate relativity.
-- **r3: High black hole probability.** High relativity.
-- **r4: Definite black hole.** Total relativity.
-- **r5: Collapsing.** Task needs to be abandoned or re-factored - it is
+- **``r0``: No chance of black hole.** No relativity.
+- **``r1``: Low black hole probability.** Low relativity.
+- **``r2``: Moderate black hole probability.** Moderate relativity.
+- **``r3``: High black hole probability.** High relativity.
+- **``r4``: Definite black hole.** Total relativity.
+- **``r5``: Collapsing.** Task needs to be abandoned or re-factored - it is
   probably impossible in its current state.
 
 Accomplishment

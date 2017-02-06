@@ -7,12 +7,12 @@ C and C++
 File Types
 ------------------------------------------------
 
-- C++
-  - Headers: ``.hpp``
-  - Implementation: ``.cpp``
-- C
-  - Headers: ``.h``
-  - Implementation: ``.c``
+* C++
+  * Headers: ``.hpp``
+  * Implementation: ``.cpp``
+* C
+  * Headers: ``.h``
+  * Implementation: ``.c``
 
 The reason behind this is so we can use C and C++ in parallel with one
 another, without confusing what language any given file is written in.
@@ -20,16 +20,18 @@ another, without confusing what language any given file is written in.
 Naming Conventions
 ------------------------------------------------
 
-- Variables: ``lowerCamelCase``
-- Constants: ``ALL_CAPS_WITH_UNDERSCORES``
-- Functions: ``lowerCamelCase``
-- Classes: ``UpperCamelCase``
-- Filenames: ``lower_with_underscores``
+* Variables: ``lowerCamelCase``
+* Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+* Functions: ``lowerCamelCase``
+* Classes: ``UpperCamelCase``
+* Filenames: ``lower_with_underscores``
 
 Formatting
 ------------------------------------------------
 
-- Use Allman bracketing and indentation style.::
+* Use Allman bracketing and indentation style.
+
+..  code-block:: c++
 
     if (x == y)
     {
@@ -42,58 +44,81 @@ Formatting
         bar();
     }
 
-- Limit lines to 80 characters.
-- Indentation should be 4 spaces (soft tabs).
-- A switch's block should be indented, and each case's block should be
+* Limit lines to 80 characters.
+* Indentation should be 4 spaces (soft tabs).
+* A switch's block should be indented, and each case's block should be
   indented in the same manner.
-- Line up lists so a) the start of list item lines align, and b) the end of
+* Line up lists so a) the start of list item lines align, and b) the end of
   list item lines roughly align. Each line should end with either a comma or,
-  in the case of the last line, the closing token.::
+  in the case of the last line, the closing token.
 
-    string names[9] = {“Bob, “Fred”, “Jim”,
-		   “Chris”, “Dave, “Jack”,
-		   “Ozymandius”, “Randall”,
-		   “Andrew”};
+..  code-block:: c++
 
-- Pointer and reference indicators ``*`` and ``&`` should be aligned to the
+    string names[9] = {"Bob", "Fred", "Jim",
+        "Chris", "Dave", "Jack",
+        "Ozymandius", "Randall",
+        "Andrew"};
+
+* Pointer and reference indicators ``*`` and ``&`` should be aligned to the
   type part of the statement, not the name.
-- Insert space padding around operators.
-- Insert space padding after parenthesis headers (after ``if``, ``switch``, etc.)
-- One-line blocks (i.e. one line ``if`` statements) should still have brackets.
+* Insert space padding around operators.
+* Insert space padding after parenthesis headers (after ``if``, ``switch``, etc.)
+* One-line blocks (i.e. one line ``if`` statements) should still have brackets.
 
 Comments
 ------------------------------------------------
-- Use CSI Commenting Standard.
-- Use ``//`` and ``/* ... */`` for CSI comments.
-- Use ``///`` and ``/** ... */`` for doc comments.
+* Use CSI Commenting Standard.
+  * All functions and variables should have a doc comment at declaration.
+  * CSI comment *every logical statement*.
 
-  - Each parameter description in doc comments should be preceded by ``\param``
+  * Header files and standalone implementation files should *always* have
+    CSI-style description and license comments at the top.
+
+* Use ``//`` and ``/* ... */`` for CSI comments.
+* When a comment spans multiple lines, prefer multiline ``/* ... */`` comments.
+  We recommend using line-leading ``*``.
+
+..  code-block:: c++
+
+    /* This is a multiline comment
+     * that spans multiple lines.
+     * See how nice this looks?
+     */
+
+* Use ``///`` and ``/** ... */`` for doc comments.
+
+  * Each parameter description in doc comments should be preceded by ``\param``
     on a new line.
-  - The return description in doc comments should be preceded by ``\return``
+
+  * The return description in doc comments should be preceded by ``\return``
     on a new line.
-    
-- Use either ``////`` or ``/* ... */`` for commenting out. If the commented-out
+
+* Use either ``////`` or ``/* ... */`` for commenting out. If the commented-out
   code will be sent up to the repository, include a CSI comment explaining
   why the code is commented out.
-- Avoid inline comments.
-- Use ``//TODO``, ``//NOTE``, and ``/FIXME`` notation where necessary.
+
+* Avoid inline comments whenever possible.
+
+* Use ``//TODO``, ``//NOTE``, and ``//FIXME`` notation where necessary.
 
 Structure
 ------------------------------------------------
-- ``main.c`` and ``main.cpp`` should reside in the root directory.
-- ``.h`` and ``.hpp`` files should be in the ``include`` directory.
-- ``.c`` and ``.cpp`` files should be in the ``src`` directory.
-- Documentation files should be in the ``docs`` directory.
+* ``main.c`` and ``main.cpp`` should reside in the root directory.
+* ``.h`` and ``.hpp`` files should be in an the ``include/`` directory. For
+  libraries, header files should be in a ``<project>`` subfolder (i.e.
+  ``include/anari/`` or ``include/pawlib/``).
+* ``.c`` and ``.cpp`` files should be in the ``src/`` directory.
+* Documentation files should be in the ``docs/`` directory.
 
 Code::Blocks Settings
 ------------------------------------------------
 Code can be automatically formatted according to these style conventions by
-the Astyle plugin on Code::Blocks. This publig can be run from "Plugins →
-Source Code Formatter".
+the Astyle plugin on Code::Blocks. This plugin can be run from
+:menuselection:`Plugins --> Source Code Formatter`.
 
 To ensure full compliance with these conventions, please adjust the following
-settings at "Settings → Editor → Source formatter". These are based on
-Code::Blocks 16.01.
+settings at :menuselection:`Settings --> Editor --> Source formatter`. These
+are based on Code::Blocks 16.01.
 
 - Style
   - Bracket Style: Allman (ANSI)
@@ -167,42 +192,44 @@ Formatting
   list item lines roughly align. Each line should end with either a comma or,
   in the case of the last line, the closing token.
 
-::
+..  code-block:: python
 
-    names = [“Bob, “Fred”, “Jim”,
-	 “Chris”, “Dave, “Jack”,
-	 “Ozymandius”, “Randall”,
-	 “Andrew”]
+    names = ["Bob", "Fred", "Jim",
+             "Chris", "Dave", "Jack",
+             "Ozymandius", "Randall",
+             "Andrew"]
 
 Comments
 ------------------------------------------------
-- Include docstrings for all functions, classes, and modules, following
+* Include docstrings for all functions, classes, and modules, following
   `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_
-- Please avoid inline comments. Comment above lines.
-- Use single line comments when possible. (``#``)
-- Please comply with the CSI Commenting Standard as much as possible.
-- Use ``#TODO``, ``#NOTE``, and ``#FIXME`` notation where necessary.
+* Please avoid inline comments. Comment above lines.
+* Use single line comments when possible. (``#``)
+* Please comply with the CSI Commenting Standard as much as possible.
+* Use ``#TODO``, ``#NOTE``, and ``#FIXME`` notation where necessary.
+* All files should precede with CSI-style description docstrings and
+  license comments.
 
 Other
 ------------------------------------------------
-- All Python documents should be syntactically compliant with both Python 2
+* All Python documents should be syntactically compliant with both Python 2
   and Python 3 as much as possible.
 
 NINJA-IDE Settings
 ------------------------------------------------
 NINJA-IDE automatically ensured that most of the above are complied with.
-However, there are a few customizable settings to look at in "Edit →
-Preferences → Editor".
+However, there are a few customizable settings to look at in
+:menuselection:`Edit --> Preferences --> Editor`.
 
-- Configuration tab
-  - Indentation Length: 4 spaces
-  - Use TABs: no
-  - Margin Line: 80
-  - Show Margin Line: YES
-  - Use Platform End of Line: no
-  - Find and Show Errors: YES
-  - Show Tool tip information about the errors: YES
-  - Find and Show Check Style errors: YES
-  - Show Tool tip information about the PEP8 errors: YES
-  - Show Python3 Migration Tips: no
-  - Remove Trailing Spaces and add Last Line automatically: YES
+* Configuration tab
+  * Indentation Length: 4 spaces
+  * Use TABs: no
+  * Margin Line: 80
+  * Show Margin Line: YES
+  * Use Platform End of Line: no
+  * Find and Show Errors: YES
+  * Show Tool tip information about the errors: YES
+  * Find and Show Check Style errors: YES
+  * Show Tool tip information about the PEP8 errors: YES
+  * Show Python3 Migration Tips: no
+  * Remove Trailing Spaces and add Last Line automatically: YES
