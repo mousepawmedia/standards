@@ -8,10 +8,15 @@ File Types
 ------------------------------------------------
 
 * C++
+
   * Headers: ``.hpp``
+
   * Implementation: ``.cpp``
+
 * C
+  
   * Headers: ``.h``
+  
   * Implementation: ``.c``
 
 The reason behind this is so we can use C and C++ in parallel with one
@@ -21,9 +26,13 @@ Naming Conventions
 ------------------------------------------------
 
 * Variables: ``lowerCamelCase``
+
 * Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+
 * Functions: ``lowerCamelCase``
+
 * Classes: ``UpperCamelCase``
+
 * Filenames: ``lower_with_underscores``
 
 Formatting
@@ -45,9 +54,12 @@ Formatting
     }
 
 * Limit lines to 80 characters.
+
 * Indentation should be 4 spaces (soft tabs).
+
 * A switch's block should be indented, and each case's block should be
   indented in the same manner.
+
 * Line up lists so a) the start of list item lines align, and b) the end of
   list item lines roughly align. Each line should end with either a comma or,
   in the case of the last line, the closing token.
@@ -61,20 +73,26 @@ Formatting
 
 * Pointer and reference indicators ``*`` and ``&`` should be aligned to the
   type part of the statement, not the name.
+
 * Insert space padding around operators.
+
 * Insert space padding after parenthesis headers (after ``if``, ``switch``, etc.)
+
 * One-line blocks (i.e. one line ``if`` statements) should still have brackets.
 
 Comments
 ------------------------------------------------
 * Use CSI Commenting Standard.
+
   * All functions and variables should have a doc comment at declaration.
+
   * CSI comment *every logical statement*.
 
   * Header files and standalone implementation files should *always* have
     CSI-style description and license comments at the top.
 
 * Use ``//`` and ``/* ... */`` for CSI comments.
+
 * When a comment spans multiple lines, prefer multiline ``/* ... */`` comments.
   We recommend using line-leading ``*``.
 
@@ -103,11 +121,15 @@ Comments
 
 Structure
 ------------------------------------------------
+
 * ``main.c`` and ``main.cpp`` should reside in the root directory.
+
 * ``.h`` and ``.hpp`` files should be in an the ``include/`` directory. For
   libraries, header files should be in a ``<project>`` subfolder (i.e.
   ``include/anari/`` or ``include/pawlib/``).
+
 * ``.c`` and ``.cpp`` files should be in the ``src/`` directory.
+
 * Documentation files should be in the ``docs/`` directory.
 
 Code::Blocks Settings
@@ -121,50 +143,95 @@ settings at :menuselection:`Settings --> Editor --> Source formatter`. These
 are based on Code::Blocks 16.01.
 
 - Style
+
   - Bracket Style: Allman (ANSI)
+
 - Brackets
+  
   - Attach classes: no
+
   - Attach "extern c": no
+
   - Attach namespaces: no
+
   - Attach inlines: no
+
 - Indentation
+
   - Indentation size (in spaces): 4
+
   - Use TABs instead of spaces: no
+
   - Force using TABs: no
+
   - Indent case: statement switches: YES
+
   - Indent classes: YES
+
   - Indent labels: YES
+
   - Indent modifiers: no
+
   - Indent namespaces: YES
+
   - Indent switches: no
+
   - Indent preprocessor blocks at bracket level zero: no
+
   - Indent multi-line preprocessor definitions ending with a backslash: no
+
   - Indent preprocessor conditions: YES
+
   - Indent C++ comments beginning in column one: no
+
   - Minimal indent added...: 2
+
   - Maximum of # spaces to ndent a continuation line...: 40
+
 - Formatting
+
   - Break closing headers...: YES
+
   - Break 'else if()' header combinations...: no
+
   - Add brackets to unbracketed one line conditional statements: YES
+
   - Remove brackets from conditional statements: no
+
   - Don't break one-line blocks: YES
+
   - Don't break complex statements and multiple statements residing...: no
+
   - Convert TABs to spaces: YES
+
   - Closes whitespace in the angle bracket of template definitions: YES
+
   - Remove the preceding '*' in multi-line comment...: no
+
   - Enable line breaking: YES
+
   - Break lines after amount of chars...: 80
+
 - Padding
+
   - Pad empty lines around header blocks: no
+
   - Insert space padding around operators: YES
+
   - Insert space padding around parenthesis on the outside: no
+
   - Insert space padding around parenthesis on the inside: no
+
   - Insert space padding between a header and the following paren: YES
+
   - Remove extra space padding around parenthesis: no
+
   - Delete empty lines within a function or method: no
+
   - Fill empty lines with the whitespace of their previous lines: no
+
   - Pointer alignment: Type
+
   - Reference alignment: Type
 
 Python
@@ -177,17 +244,25 @@ Based on `PEP8 <https://www.python.org/dev/peps/pep-0008>`_ and
 
 Naming Conventions
 ------------------------------------------------
+
 - Variables: ``lower_with_underscores``
+
 - Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+
 - Functions: ``lower_with_underscores``
+
 - Classes: ``UpperCamelCase``
+
 - Filenames/Modules: ``lower_with_underscores`` (Underscores discouraged,
   however. Avoid when possible.)
 
 Formatting
 ------------------------------------------------
+
 - Four-space intendation ONLY.
+
 - Avoid code beyond 80 characters. Use ``\`` as necessary to break lines.
+
 - Line up lists so a) the start of list item lines align, and b) the end of
   list item lines roughly align. Each line should end with either a comma or,
   in the case of the last line, the closing token.
@@ -203,10 +278,15 @@ Comments
 ------------------------------------------------
 * Include docstrings for all functions, classes, and modules, following
   `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_
+
 * Please avoid inline comments. Comment above lines.
+
 * Use single line comments when possible. (``#``)
+
 * Please comply with the CSI Commenting Standard as much as possible.
+
 * Use ``#TODO``, ``#NOTE``, and ``#FIXME`` notation where necessary.
+
 * All files should precede with CSI-style description docstrings and
   license comments.
 
@@ -222,14 +302,25 @@ However, there are a few customizable settings to look at in
 :menuselection:`Edit --> Preferences --> Editor`.
 
 * Configuration tab
+
   * Indentation Length: 4 spaces
+
   * Use TABs: no
+
   * Margin Line: 80
+
   * Show Margin Line: YES
+
   * Use Platform End of Line: no
+
   * Find and Show Errors: YES
+
   * Show Tool tip information about the errors: YES
+
   * Find and Show Check Style errors: YES
+
   * Show Tool tip information about the PEP8 errors: YES
+
   * Show Python3 Migration Tips: no
+
   * Remove Trailing Spaces and add Last Line automatically: YES
