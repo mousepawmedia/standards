@@ -9,7 +9,7 @@ purpose, but is often mis-applied to all built-in tests.
 
 Because we need a testing standard that has no relation to TDD, we have created
 the Live-In Testing Standard [LIT]. While it is our sole testing standard at
-MousePaw Games, other projects may choose to use this standard alongside TDD,
+MousePaw Media, other projects may choose to use this standard alongside TDD,
 as it is an unrelated standard.
 
 Philosophy and Limitations
@@ -54,7 +54,7 @@ teardown
 
 Implementation
 =======================================
-MousePaw Games' **Golilocks** library (a component of PawLIB) is designed
+MousePaw Media' **Golilocks** library (a component of PawLIB) is designed
 specifically for LIT in C++. **Blueshell** (upcoming in PawLIB 1.1) can be
 used to quickly create a run-time interface for Goldilocks.
 

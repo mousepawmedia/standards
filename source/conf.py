@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# MousePaw Games Standards documentation build configuration file, created by
+# MousePaw Media Standards documentation build configuration file, created by
 # sphinx-quickstart on Mon May 30 15:25:19 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -48,9 +48,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'MousePaw Games Standards'
-copyright = '2016 MousePaw Games. Licensed under CC-BY-SA 4.0'
-author = 'MousePaw Games'
+project = 'MousePaw Media Standards'
+copyright = '2016 MousePaw Media. Licensed under CC-BY-SA 4.0'
+author = 'MousePaw Media'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -225,8 +225,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MousePawGamesStandards.tex', 'MousePaw Games Standards',
-     'MousePaw Games', 'manual'),
+    (master_doc, 'MousePawGamesStandards.tex', 'MousePaw Media Standards',
+     'MousePaw Media', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -255,7 +255,7 @@ latex_logo = "mpg_logo.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mousepawgamesstandards', 'MousePaw Games Standards',
+    (master_doc, 'mousepawgamesstandards', 'MousePaw Media Standards',
      [author], 1)
 ]
 
@@ -269,7 +269,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MousePawGamesStandards', 'MousePaw Games Standards',
+    (master_doc, 'MousePawGamesStandards', 'MousePaw Media Standards',
      author, 'MousePawGamesStandards', 'One line description of project.',
      'Miscellaneous'),
 ]

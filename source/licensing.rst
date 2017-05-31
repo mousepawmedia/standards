@@ -64,7 +64,7 @@ Other GPL projects may be use GPLv3 code, but no other code may.
 
 Open Source/Free Software Stance
 ------------------------------------------------
-MousePaw Games completely and publicly endorses the platform and goals of
+MousePaw Media completely and publicly endorses the platform and goals of
 the Open Source Initiative, which we aim to further support and promote
 through our company's activity. We want to encourage the widespread and
 dominant adoption of open source software and open standards, especially

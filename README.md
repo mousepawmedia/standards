@@ -1,7 +1,7 @@
-MousePaw Games Standards
+MousePaw Media Standards
 =====================
 
-MousePaw Games has authored a number of standards to guide their
+MousePaw Media has authored a number of standards to guide their
 ongoing software development efforts. These standards are
 made freely available for the benefit of the open source
 community, and the programming community at large.
@@ -43,7 +43,7 @@ There are additional make targets as well. To see the complete list, simply run.
 Feedback
 -------------
 These standards are written and maintained by the
-MousePaw Games Standards Board. Feedback is welcome
+MousePaw Media Standards Board. Feedback is welcome
 via email (developers@mousepawgames.com).
 
 You can also frequently find us in the #mousepawgames
@@ -53,15 +53,15 @@ Pull requests to this repository are not accepted. If
 you wish to propose a change, email your patch to us
 at the address above.
 
-For more information about contributing to MousePaw Games
+For more information about contributing to MousePaw Media
 projects, see [mousepawgames.com/opensource][2].
 
 License
 -------------
-The MousePaw Games Standards are made available via the
+The MousePaw Media Standards are made available via the
 Creative Commons Attribution-ShareAlike ([CC BY-SA 4.0][3]) license.
 
-The project is owned and maintained by [MousePaw Games][2].
+The project is owned and maintained by [MousePaw Media][2].
 
 [1]: http://www.mousepawgames.com/standards
 [2]: http://www.mousepawgames.com/opensource
