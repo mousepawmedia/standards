@@ -14,7 +14,7 @@ made freely available for the benefit of the open source
 community, and the programming community at large.
 
 You can access the source files for these standards from
-the `Github mirror <https://github.com/mousepawmedia/standards>`_.
+the `GitHub mirror <https://github.com/mousepawmedia/standards>`_.
 For more information about contributing, see `Feedback`_.
 
 Public Standards
@@ -51,7 +51,7 @@ These standards are written and maintained by the
 MousePaw Media Standards Board. Feedback is welcome
 via email (developers@mousepawmedia.com).
 
-You can also frequently find us in the #mousepawgames
+You can also frequently find us in the #mousepawmedia
 channel on Freenode.
 
 Pull requests to this repository are not accepted. If

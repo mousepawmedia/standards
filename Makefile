@@ -94,9 +94,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/MousePawGamesStandards.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/MousePawMediaStandards.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/MousePawGamesStandards.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/MousePawMediaStandards.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -113,8 +113,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/MousePawGamesStandards"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/MousePawGamesStandards"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/MousePawMediaStandards"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/MousePawMediaStandards"
 	@echo "# devhelp"
 
 .PHONY: epub

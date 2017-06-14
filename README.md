@@ -44,9 +44,9 @@ Feedback
 -------------
 These standards are written and maintained by the
 MousePaw Media Standards Board. Feedback is welcome
-via email (developers@mousepawgames.com).
+via email (developers@mousepawmedia.com).
 
-You can also frequently find us in the #mousepawgames
+You can also frequently find us in the #mousepawmedia
 channel on Freenode.
 
 Pull requests to this repository are not accepted. If
@@ -54,7 +54,7 @@ you wish to propose a change, email your patch to us
 at the address above.
 
 For more information about contributing to MousePaw Media
-projects, see [mousepawgames.com/opensource][2].
+projects, see [mousepawmedia.com/opensource][2].
 
 License
 -------------
@@ -63,6 +63,6 @@ Creative Commons Attribution-ShareAlike ([CC BY-SA 4.0][3]) license.
 
 The project is owned and maintained by [MousePaw Media][2].
 
-[1]: http://www.mousepawgames.com/standards
-[2]: http://www.mousepawgames.com/opensource
+[1]: https://www.mousepawmedia.com/standards
+[2]: https://www.mousepawmedia.com/developers
 [3]: https://creativecommons.org/licenses/by-sa/4.0/

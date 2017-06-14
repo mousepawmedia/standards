@@ -203,7 +203,7 @@ html_static_path = ['.static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MousePawGamesStandards'
+htmlhelp_basename = 'MousePawMediaStandards'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -225,7 +225,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MousePawGamesStandards.tex', 'MousePaw Media Standards',
+    (master_doc, 'MousePawMediaStandards.tex', 'MousePaw Media Standards',
      'MousePaw Media', 'manual'),
 ]
 
@@ -255,7 +255,7 @@ latex_logo = "mpg_logo.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mousepawgamesstandards', 'MousePaw Media Standards',
+    (master_doc, 'mousepawmediastandards', 'MousePaw Media Standards',
      [author], 1)
 ]
 
@@ -269,8 +269,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MousePawGamesStandards', 'MousePaw Media Standards',
-     author, 'MousePawGamesStandards', 'One line description of project.',
+    (master_doc, 'MousePawMediaStandards', 'MousePaw Media Standards',
+     author, 'MousePawMediaStandards', 'One line description of project.',
      'Miscellaneous'),
 ]
 
