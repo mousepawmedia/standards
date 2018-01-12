@@ -8,8 +8,8 @@ C++
 ------------------------------------------------
 **Standard:** `C++14 ISO Standard <https://isocpp.org/std/the-standard>`_
 
-**Compiler:** `Clang 3 (3.8 or later) <http://releases.llvm.org/3.8.0/tools/clang/docs/ReleaseNotes.html>`_
-or `GNU GCC 5 (5.4 or later) <https://gcc.gnu.org/gcc-5/changes.html>`_
+**Compiler:** `Clang 5 (5.0 or later) <http://releases.llvm.org/5.0.0/tools/clang/docs/ReleaseNotes.html>`_
+or `GNU GCC 7 (7.2 or later) <https://gcc.gnu.org/gcc-7/changes.html>`_
 
 **Windows Compiler:** `MSYS2 <http://msys2.github.io/>`_
 
@@ -63,7 +63,7 @@ Libraries
 +-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
 | `Opus <https://opus-codec.org/>`_               | Audio codec            | 1.3.1   | C++     | Repo: ``lib-git``           | BSD-3     |
 +-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
-| `Kivy <https://kivy.org/>`_                     | GUI                    | 1.9.2   | Python  | PPA: ``ppa:kivy-team/kivy`` | MIT       |
+| `Kivy <https://kivy.org/>`_                     | GUI                    | 1.10.0  | Python  | PPA: ``ppa:kivy-team/kivy`` | MIT       |
 +-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+
 | `pugixml <http://pugixml.org/>`_                | XML parsing            | 1.8     | C++     | Repo: ``lib-git``           | MIT       |
 +-------------------------------------------------+------------------------+---------+---------+-----------------------------+-----------+

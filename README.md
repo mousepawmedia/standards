@@ -14,14 +14,6 @@ The most notable of these standards include:
 
 More information can be found on the [Standards][1] page.
 
-Standards Board
--------------
- - Audrey Henry
- - Nate Groggett
- - Anne McDonald
- - Jason C. McDonald
- - Scott Taylor
-
 Standards Format
 -------------
 The standards are all written in RestructuredText format,
@@ -39,6 +31,22 @@ On a Unix system, you can use the following commands:
 There are additional make targets as well. To see the complete list, simply run...
 
     $ make
+
+Standards Board
+-------------------------
+
+**2016 Board**
+ - Audrey Henry
+ - Nate Groggett
+ - Anne McDonald
+ - Jason C. McDonald
+ - Scott Taylor
+
+**2018 Q1 Board**
+ - Jason C. McDonald
+ - Jarek Thomas
+ - Bowen Volwiler
+ - Sergio Ramirez
 
 Feedback
 -------------
