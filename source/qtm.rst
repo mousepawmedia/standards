@@ -37,15 +37,15 @@ Priority
 Priority refers to how soon this task needs to be accomplished. A task can be
 a low priority temporarily, and yet still have a high Gravity.
 
-- **``p0``: Wishlist.** Tasks that don't necessarily need to be completed.
-- **``p1``: Eventual.** Lowest priority tasks.
-- **``p2``: Soonish.** Tasks that don't necessarily need to be completed in
+- **p0: Wishlist.** Tasks that don't necessarily need to be completed.
+- **p1: Eventual.** Lowest priority tasks.
+- **p2: Soonish.** Tasks that don't necessarily need to be completed in
   the current development cycle.
-- **``p3``: Normal.**  Tasks that should be completed in the current development
+- **p3: Normal.**  Tasks that should be completed in the current development
   cycle, after current ``p4`` and ``p5`` tasks.
-- **``p4``: Important.** The usual top priority, and whatever is currently
+- **p4: Important.** The usual top priority, and whatever is currently
   being worked on.
-- **``p5``: Immediate.** Reserved for escalating a task above all other
+- **p5: Immediate.** Reserved for escalating a task above all other
   priorities; "drop everything and do this!"
 
 .. _qtm_gravity:
@@ -58,15 +58,15 @@ easy-to-use, and accomplishes all of its intended goals.
 This measure is especially useful when performing a "featurectomy" (removing
 features from a project to expidite it's completion.)
 
-- **``g0``: Wishlist.** Proposed and unconfirmed tasks.
-- **``g1``: Trivial.** "Would be nice" tasks; these take backseat to the
+- **g0: Wishlist.** Proposed and unconfirmed tasks.
+- **g1: Trivial.** "Would be nice" tasks; these take backseat to the
   completion of all other tasks. First to be cut.
-- **``g2``: Minor.** "Polishing" tasks, bells and whistles. Ideally should be
+- **g2: Minor.** "Polishing" tasks, bells and whistles. Ideally should be
   completed, but can be cut if necessary.
-- **``g3``: Major.** Non-essential, but really should be completed if possible.
-- **``g4``: Significant.** Must be completed, only cut if desperate.
-- **``g5``: Critical.** Project can't exist without. Must be completed, period.
-- **``gΣ``: Sum of all subtasks.** Use this for umbrella tasks that don't
+- **g3: Major.** Non-essential, but really should be completed if possible.
+- **g4: Significant.** Must be completed, only cut if desperate.
+- **g5: Critical.** Project can't exist without. Must be completed, period.
+- **gΣ: Sum of all subtasks.** Use this for umbrella tasks that don't
   have a gravity of their own.
 
 .. _qtm_friction:
@@ -111,14 +111,14 @@ effort the task will require.
 A good rule of thumb: you will know the relativity within the first hour of
 working on a task.
 
-- **``r0``: No chance of black hole.** No flux.
-- **``r1``: Low black hole probability.** Probably safe.
-- **``r2``: Moderate black hole probability.** Some flux, but looks possible
+- **r0: No chance of black hole.** No flux.
+- **r1: Low black hole probability.** Probably safe.
+- **r2: Moderate black hole probability.** Some flux, but looks possible
   to complete.
-- **``r3``: High black hole probability.** Still possible to complete,
+- **r3: High black hole probability.** Still possible to complete,
   but take caution.
-- **``r4``: Almost-definite black hole.** Completion possible, but unlikely.
-- **``r5``: Collapsing.** Bail out NOW. Task needs to be abandoned or
+- **r4: Almost-definite black hole.** Completion possible, but unlikely.
+- **r5: Collapsing.** Bail out NOW. Task needs to be abandoned or
   re-factored - it is virtually impossible in its current state.
 
 ..  NOTE:: Relativity and flux are discussed in detail in an article by
@@ -137,31 +137,31 @@ Volatility has two parts, although only one is absolutely necessary. The first
 is the Volatility measure on the bug itself, indicating what development
 stage it was caught in.
 
-- **``vn``: Not a bug.** Feature requests and other non-bug issues should
-  *always* have this rating (or else ``v0`` if you can't implement ``vn``.)
-- **``v0``: Caught in Design phase.** This means the bug was anticipated before
+- **vN: Not a bug.** Feature requests and other non-bug issues should
+  *always* have this rating (or else ``v0`` if you can't implement ``vN``.)
+- **v0: Caught in Design phase.** This means the bug was anticipated before
   coding even began.
-- **``v1``: Caught in Coding phase.** This means the bug was caught before it
+- **v1: Caught in Coding phase.** This means the bug was caught before it
   reached a protected branch, such as ``master``.
-- **``v2``: Caught in SQA (Testing) phase.** This means the bug landed a
+- **v2: Caught in SQA (Testing) phase.** This means the bug landed a
   protected branch, such as ``master``, but was caught before reaching
   production.
-- **``v3``: Caught in Production phase.** This means the bug actually shipped
+- **v3: Caught in Production phase.** This means the bug actually shipped
   to end-users (i.e. it reached ``stable``).
 
 The second part of Volatility is optional, but may be useful to certain teams.
 *Origin* indicates which development stage the bug originated at.
 
-- **`on`: Not a bug/Unknown** This should be used for non-bug issues, and
+- **oN: Not a bug/Unknown** This should be used for non-bug issues, and
   also if the origin cannot be determined.
-- **`o0`: Originated in Design phase.** This usually means the bug is a logic
+- **o0: Originated in Design phase.** This usually means the bug is a logic
   error or impossible expectation that formed during the pre-coding Design
   process.
-- **`o1`: Originated in Coding phase.** Almost all bugs are created during the
+- **o1: Originated in Coding phase.** Almost all bugs are created during the
   actual code-writing process.
-- **`o2`: Originated in SQA (Testing) phase.** For example, if a bugfix made at
+- **o2: Originated in SQA (Testing) phase.** For example, if a bugfix made at
   this stage causes another bug to form, this would be the origin.
-- **`o3`: Originated in Production phase.** This usually means the bug was
+- **o3: Originated in Production phase.** This usually means the bug was
   created during the process of preparing `master` for shipment.
 
 You can combine these two metrics to get the Adjusted Volatility [AV] score
