@@ -37,6 +37,7 @@ These standards were written specifically for MousePaw Media.
 
    coding
    licensing
+   software
    technical
 
 Indices and tables
