@@ -26,46 +26,46 @@ Office Software
 Office Suites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice 6
-* *OpenOffice.org*
+* **LibreOffice 6**
 * *Calligra*
+* *OpenOffice.org* ‡
 
 Documents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Writer 6
-* *OpenOffice.org Writer*
-* *Calligra Words*
+* **LibreOffice Writer 6**
 * *AbiWord*
+* *Calligra Words*
+* *OpenOffice.org Writer* ‡
 
 Spreadsheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Calc 6
-* *OpenOffice.org Calc*
+* **LibreOffice Calc 6**
 * *Calligra Sheets*
+* *OpenOffice.org Calc* ‡
 
 Presentations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Impress 6
-* *OpenOffice.org Impress*
+* **LibreOffice Impress 6**
 * *Calligra Stage*
+* *OpenOffice.org Impress* ‡
 
 Flowcharts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Dia
 * LibreOffice Draw 6
-* *OpenOffice.org Draw*
 * *Calligra Flow*
+* *OpenOffice.org Draw* ‡
 
 Office Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Base 6
-* *OpenOffice.org Base*
+* **LibreOffice Base 6**
 * *Calligra Kexi*
+* *OpenOffice.org Base* ‡
 
 PDF Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,23 +76,23 @@ Math and Formulas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * LibreOffice Math 6
-* *OpenOffice.org Math*
-* ZeGrapher
 * GeoGebra
+* ZeGrapher
+* *OpenOffice.org Math* ‡
 
 Collaborative Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Etherpad (DevNet)
-* *AbiWord*‡
+* *AbiWord* ‡
 
 Desktop Publishing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Scribus
 * LibreOffice Writer 6
-* *OpenOffice.org Writer*
 * *Calligra Words*
+* *OpenOffice.org Writer* ‡
 
 Mindmapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
