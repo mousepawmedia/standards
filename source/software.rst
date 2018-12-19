@@ -26,14 +26,14 @@ Office Software
 Office Suites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice 5
+* LibreOffice 6
 * *OpenOffice.org*
 * *Calligra*
 
 Documents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Writer 5
+* LibreOffice Writer 6
 * *OpenOffice.org Writer*
 * *Calligra Words*
 * *AbiWord*
@@ -41,14 +41,14 @@ Documents
 Spreadsheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Calc 5
+* LibreOffice Calc 6
 * *OpenOffice.org Calc*
 * *Calligra Sheets*
 
 Presentations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Impress 5
+* LibreOffice Impress 6
 * *OpenOffice.org Impress*
 * *Calligra Stage*
 
@@ -56,21 +56,26 @@ Flowcharts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Dia
-* LibreOffice Draw 5
+* LibreOffice Draw 6
 * *OpenOffice.org Draw*
 * *Calligra Flow*
 
 Office Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Base 5
+* LibreOffice Base 6
 * *OpenOffice.org Base*
 * *Calligra Kexi*
+
+PDF Annotation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Xournal**
 
 Math and Formulas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Math 5
+* LibreOffice Math 6
 * *OpenOffice.org Math*
 * ZeGrapher
 * GeoGebra
@@ -78,7 +83,6 @@ Math and Formulas
 Collaborative Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Nextcloud Collabora (DevNet)
 * Etherpad (DevNet)
 * *AbiWord*‡
 
@@ -86,7 +90,7 @@ Desktop Publishing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Scribus
-* LibreOffice Writer 5
+* LibreOffice Writer 6
 * *OpenOffice.org Writer*
 * *Calligra Words*
 
@@ -110,6 +114,7 @@ Web Browser
 * Chromium
 * Vivaldi
 * Opera
+* Brave
 
 Emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -189,8 +194,8 @@ Programming
 Text Editor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Geany
 * Atom
+* Geany
 * Visual Studio Code
 * *KATE*
 * *Nano*
@@ -232,6 +237,7 @@ Python IDE
 * Visual Studio Code
 * *Geany*
 * *NINJA-IDE*
+* *PyCharm Community Edition*
 * *Vim*
 * *Aptana* ‡
 * *Brackets* ‡
@@ -240,7 +246,6 @@ Python IDE
 * *Pydev* ‡
 * *Kdevelop* ‡
 * *Spyder* ‡
-* *PyCharm Community Edition* $‡
 * *Sublime* $‡
 
 Version Control Software
@@ -268,7 +273,7 @@ Disallowed Software
 =====================================
 
 ..  NOTE:: This list doesn't apply to open source contributors, although we
-    strongly discourage it.
+    strongly discourage use of the software below.
 
 Why Disallow Software?
 --------------------------------------
@@ -325,17 +330,6 @@ EXCEPTION: A copy (NOT the master) of the audio may be saved as an MP3 for
 compatibility with third-party services and software. Distribution in MP3 is
 only allowed if the distribution platform strictly requires that format.
 
-Microsoft Edge
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Due to concerns over Microsoft's Terms of Service (see Microsoft Windows 10),
-Microsoft Edge is NOT to be used under any circumstances for company purposes,
-including (but not limited to) accessing the staff network,
-company-commissioned web design, or accessing any website for work-related
-reasons.
-
-..  NOTE: Our web design standards only support Edge collaterally.
-
 Microsoft Internet Explorer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -346,137 +340,29 @@ accessing any website for work-related reasons.
 
 ..  NOTE: Our web design standards only support IE collaterally.
 
-Microsoft Outlook
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Due to licensing, glitches, and security issues, Microsoft Outlook is NOT to be
-used for accessing company email accounts or calendars. Additionally, employees
-may not forward their company mail to an Outlook account.
-
 Microsoft Office
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Due to some ODT compatibility issues, and a lack of in-company training and
-support, Microsoft Office is NOT to be used on any company documents. The
-exception to this rule has been removed.
+support, Microsoft Office is NOT to be used on any company documents.
 
-Microsoft Visual
+Microsoft Visual C++ Compiler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Due to platform limitations and poor backwards compatibility, the Microsoft
-Visual platform and all of its elements are officially disallowed.
+Due to platform limitations, the Microsoft Visual C++ compiler is officially
+disallowed. However, we do permit the use of Clang as the compiler in the
+Visual Studio environment.
 
-..  NOTE:: Visual Studio Code is completely separate from the Microsoft
-    Visual platform, and is therefore allowed.
-
-Microsoft Windows
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See "Microsoft Windows Ban" below for details.
-
-Microsoft Windows 10
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-See "Microsoft Windows Ban" below for details.
+Additionally, Visual Studio and Visual Studio Code are both *permitted*.
 
 Trimble SketchUp (formerly Google SketchUp)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Due to licensing costs, SketchUp may only be used for internal idea drafting.
 
-Microsoft Windows Ban
+Microsoft Windows
 ----------------------------------------
 
-Due to serious privacy and security concerns, Microsoft Windows is banned to
-varying degrees for all company work.
-
-Affected Versions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Windows 10 (Total ban)
-* Windows 8/8.1 (Partial ban)
-* Windows 7 (Partial ban)
-* Windows Vista (Partial ban)
-
-Ban Details
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-..  WARNING:: Windows 10's Terms of Service give Microsoft permission to access
-    and use any and all of your personal data without warning for virtually
-    anything they see fit, with how they worded their legal documents. More
-    information in this article.
-
-Recent updates to Windows Vista-Windows 8.1 give Microsoft that same level of
-access on those operating systems. Even if Microsoft is responsible with this
-ability, it creates a massive security hole.
-
-Microsoft Windows 10 may NOT be used for any company activity or purposes,
-including accessing the staff network, under any circumstances.
-This is a **Total Ban**.
-
-**Both the Total and Partial bans** forbid checking company email, accessing the
-staff network, and other company activities on these operating systems.
-
-The ban is in full effect as of November 1, 2015.
-
-What is BANNED in both partial and total bans?
-"""""""""""""""""""""""""""""""""""""""""""""""""
-
-* Accessing the staff network in any capacity from within Windows in any form.
-* Checking out ANY company-hosted Git repositories.
-* Using a Windows-hosted VirtualBox (or other VM) instance of Linux for
-  company work of any sort.
-* Accessing and modifying files for closed-source company projects (such as
-  *Word4Word*) on affected versions of Windows.
-
-What is PERMITTED in partial bans?
-""""""""""""""""""""""""""""""""""""
-
-* Checking out company-maintained GitHub repositories.
-* Accessing and modifying files for open-source company projects.
-* Building and testing Windows binaries and intallers of open-source
-  company projects.
-* Generating Git patch files for open-source company projects.
-* Accessing a Linux computer via a secure desktop sharing setup.
-  (Permitted, but not encouraged.)
-* Using a Linux-hosted VirtualBox (or other VM) instance of Windows for
-  personal and permitted company work.
-
-Will we still be supporting Windows Vista/7/8/8.1 in release?
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-Yes! Many schools use these versions of Windows. As such, we will
-"officially support" them for the forseeable future.
-
-What about Windows XP?
-""""""""""""""""""""""""""""
-
-Windows XP is no longer supported by Microsoft, and no longer receives updates.
-As such, Windows XP and earlier are not part of the ban, nor do I forsee them
-becoming part of the ban. However, I do strongly advise caution when using
-these operating systems online, as they are extremely prone to viruses and
-other attacks. Please access the staff network via Linux instead whenever
-possible, and simply copy files over to your Windows XP VirtualBox.
-
-Can I use a VirtualBox of Linux in my Windows account for company work?
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-No. The Linux installation on a VirtualBox is still storing files on the
-Windows machine. Additionally, internet is passing through Windows. Your Linux
-installation MUST be installed directly on a hard disk, and it must exist
-separately and boot independently from Windows.
-
-May I still use Windows for personal use?
-""""""""""""""""""""""""""""""""""""""""""""
-
-Of course - we don't dictate your personal life. While I recommend evaluating
-whether using Windows is essential, given the extremely high risk of your files
-and personal information being stolen, the choice of whether to use, and how
-much, is ultimately up to you. Some people just need Windows for that 5% of
-stuff that Linux cannot do. :)
-
-If you have questions about some use of Windows not listed here, assume "no"
-and contact IT for additional information.
-
-If you need help installing Linux on your computer, either as the only
-operating system or as a dual-boot with Windows, please contact IT.
+As of 2019, due to revisions in the Terms of Service and Privacy Policies for
+Microsoft, we have lifted the ban on Microsoft Windows. However, **we still
+require Linux for development work**.
