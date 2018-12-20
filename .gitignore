@@ -1,1 +1,7 @@
 build/
+
+# Ignore secrets
+.env
+.pk
+.pem
+.pub
