@@ -1,6 +1,10 @@
 Quantified Task Management [QTM]
 #######################################
 
+**Version:** 1.1.0
+
+**Last Updated:** 2018-01-12
+
 Vision
 ===================================
 For decades, programmers and managers have struggled to create a reliable

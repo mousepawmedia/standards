@@ -55,7 +55,7 @@ Presentations
 Flowcharts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Dia
+* **Dia**
 * LibreOffice Draw 6
 * *Calligra Flow*
 * *OpenOffice.org Draw* ‡
@@ -103,18 +103,18 @@ Mindmapping
 Desktop Email Client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* Evolution
 * Thunderbird
-* *Evolution*
 * *Geary*
 
 Web Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Firefox
-* Chromium
-* Vivaldi
-* Opera
 * Brave
+* Firefox
+* *Chromium*
+* *Opera*
+* *Vivaldi*
 
 Emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -194,9 +194,9 @@ Programming
 Text Editor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* **Visual Studio Code**
 * Atom
 * Geany
-* Visual Studio Code
 * *KATE*
 * *Nano*
 * *Vim*
@@ -207,9 +207,9 @@ Text Editor
 C++ IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Code::Blocks 16.04
-* Visual Studio Code
+* **Visual Studio Code**
 * *Atom*
+* *Code::Blocks 16.04*
 * *Geany*
 * *Vim*
 * *Anjuta* ‡
@@ -224,8 +224,8 @@ C++ IDE
 RestructuredText IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Atom
-* Visual Studio Code
+* **Visual Studio Code**
+* *Atom*
 * *Geany*
 * *Vim*
 * *Brackets* ‡
@@ -233,8 +233,8 @@ RestructuredText IDE
 Python IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Atom
-* Visual Studio Code
+* **Visual Studio Code**
+* *Atom*
 * *Geany*
 * *NINJA-IDE*
 * *PyCharm Community Edition*

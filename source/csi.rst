@@ -1,6 +1,10 @@
 Commenting Showing Intent [CSI]
 #######################################
 
+**Version:** 1.2.0
+
+**Last Updated:** 2019-08-26
+
 The CSI (Commenting Showing Intent) Commenting Standards refers to a
 style of code commenting which allows for the complete rewriting of a
 program in any language, given only the comments. It is also a backhanded
@@ -9,9 +13,15 @@ recreate the whole event.
 
 Purpose and Theory
 =======================================
+
 In many languages, it is considered “bad practice” to not comment code,
 yet so many programmers fail to do it. Many more write comments to
-themselves, but these comments are cryptic at best.
+themselves, but these comments are often cryptic at best. Still others write
+comments that restate the functionality of the code.
+
+Because of these problems, several practices exist which condemn comments in
+most, or all, situations. This leads to code which becomes inexorably separated
+from its specification.
 
 The CSI Commenting Standard offers a non-language-specific standard
 for writing comments.
@@ -22,48 +32,74 @@ Advantages
 We're asking you to type twice, if not three times, as much as you do now.
 What's the advantage to that?
 
-1. When you come back to your code after a long time away, you will be
+1. CSI comments become a **living specification**, wherein the expected behavior
+of the program and the actual functionality live in close proximity to one
+another, and can be more easily kept in sync and up-to-date.
+
+2. When you come back to your code after a long time away, you will be
 able to find your footing much faster.
 
-2. When other developers (or non-programmers) read your code or API
+3. When other developers (or non-programmers) read your code or API
 documentation, they will be able to understand it more thoroughly,
 much quicker. This is vital to efficient code reviews and third-party
 debugging.
 
-3. In open source projects, you significantly reduce the entry learning
-curve for outside contributors. Because learning the code is much easier,
-individuals are able to start making meaningful contributions more quickly.
-This is vital for building open source project communities!
+4. You significantly reduce the entry learning curve for new contributors.
+Because learning the code is much easier, individuals are able to start
+making meaningful contributions more quickly.
 
-4. You will be able to desk-check, debug, and track complicated logical
-thought patterns much quicker.
+5. You and your code reviewers will be able to desk-check, debug, and track
+complicated logical thought patterns much quicker. Mismatches between intent
+and actual behavior become evident.
 
-5. When you are dealing with a complex logical process that you are trying
+6. When you are dealing with a complex logical process that you are trying
 to write code for, you can start by writing your entire function in
 CSI-compliant comments. Then, using these comments as a sort of pseudocode,
 you can write the code under each comment.
 
-6. You can translate your program into another computer language much quicker.
+7. You can translate your program into another computer language much quicker.
 Again, by using the CSI-compliant comments, you can rewrite each line of
 code to work in your programming language.
 
-7. The code becomes collaterally useful for demonstrating the language
+8. The code becomes collaterally useful for demonstrating the language
 syntax and features themselves. Armed with an understanding of the goal, the
 less experienced developer can more quickly surmise how the code works.
-(See #3.)
+(See #4.)
 
 CSI vs. Self-Commenting Code
 -------------------------------------
-"Self-commenting code" is the idea that we can write code in such a
-way that its purpose is obvious and self-evident. Python's syntax
-is especially supportive of this practice.
 
-However, while the principles
-of "self-commenting code" are beneficial in any language, they are
-wholly useless in expressing the "why" of the code. No matter how
-quickly someone can understand what a line of code does, it still
-does not explain why the line exists, or why one approach was taken
-over another.
+"Self-Commenting Code" is a practice wherein a code's functionality is
+self-evident. Through naming, structure, and various other techniques,
+the immediate purpose becomes obvious to the reader. This is beneficial in
+any language.
+
+However, "Self-Commenting Code" is seldom capable of expressing the entire
+intent, or "why", of the code.
+
+* It is nearly impossible to express the *intended* behavior of the code;
+only the *actual* behavior is evident, which can conceal logic errors.
+
+* Code cannot imply the reason the current approach was taken over another.
+
+* Code can seldom self-express its purpose in its larger context. Even attempting
+to do so can lead to impractically long function and class names.
+
+The CSI Standard should exist *alongside* Self-Commenting Code practices, not
+*instead of*.
+
++-----------+-------------------+---------------------+
+|           | CSI               | Self-Commenting     |
++===========+===================+=====================+
+| Topic     | Intended          | Actual behavior.    |
+|           | behavior.         |                     |
++-----------+-------------------+---------------------+
+| Question  | **WHY** did we    | **WHAT** does the   |
+|           | write this code?  | code do?            |
++-----------+-------------------+---------------------+
+| Expresses | Language-agnostic | Language-specific   |
+|           | specification.    | functionality.      |
++-----------+-------------------+---------------------+
 
 CSI vs. Documentation
 --------------------------------------
@@ -89,6 +125,7 @@ to help produce better autodocs. The important distinction is that
 
 Keeping Up-To-Date
 ----------------------------------------
+
 A common argument against comments is that *"comments become outdated too
 quickly"*, and *"maintaining comments takes extra work"*. However, proper
 application of the CSI Commenting Standard avoids both of these problems.
@@ -127,7 +164,7 @@ Python
 CSI comments should not be confused with docstrings (see CSI vs.
 Documentation). Line comments should be used for CSI. Placing the
 comment above the code in question is recommended. Inline comments
-are prone to causing an overrun of PEP8's line length limits.
+are prone to causing an overrun of PEP 8's line length limits.
 
 .. code-block:: c++
 
@@ -164,7 +201,7 @@ term "floor" - if a reader is unfamiliar with this term, they will have
 to look it up just to understand the comment - a situation that we should
 avoid as much as possible.
 
-**BETTER**
+**BAD**
 
 .. code-block:: c++
 
@@ -215,7 +252,7 @@ the comment.
     int maximum_range = 27;
 
 This is too vague, and redundant given the variable name. (I'm assuming this
-isn't being clarified by immeidately prior comments.)
+isn't being clarified by immediately prior comments.)
 
 **BETTER**
 
@@ -262,11 +299,12 @@ detracting from the whole point of this standard.
 .. code-block:: c++
 
     /* We return -1 instead of 0 to keep the
-     * math gremlins happy in the upcoming divison. */
+     * math gremlins happy in the upcoming division. */
     return -1;
 
 Context
 ---------------------------------
+
 Context is very useful in comments. Since we're aiming for a conversational
 tone, it is okay for one comment to help explain the comment immediately
 following. However, we do not want to become too reliant on context, as it
@@ -301,6 +339,7 @@ The following would be better in a very large function.
 
 Length
 --------------------------------
+
 Obviously, the above practices will result in longer comments. This isn't a
 bad thing, as it seriously increases the code's readability, and speeds up
 debugging. Appropriate brevity comes with practice.
@@ -308,7 +347,7 @@ debugging. Appropriate brevity comes with practice.
 Bear this in mind: a single comment should state the **purpose** of a line or
 block of code in plain English.
 
-**BAD**
+**ACCEPTABLE**
 
 .. code-block:: c++
 
@@ -355,10 +394,15 @@ By spreading out the comments, we can see the intention behind each
 piece of code. ``sums += nums[i]`` is obviously adding the number
 we found to our running sum.
 
+Spreading out comments also helps to ensure they are kept up-to-date. One of
+the reasons programmers neglect to update comments is that they are not
+in the immediate vicinity of their other changes.
+
 Frequency and Necessity
 -------------------------------------
-The core standard is this: comment everything. Each logical step should
-have an explanation. Yes, it doubles the size of your document, but you
+
+The core standard is this: **comment everything at first**. Each logical step
+should have an explanation. Yes, it doubles the size of your document, but you
 (and other people) will be able to better read the code and documentation
 later.
 
@@ -403,6 +447,25 @@ are returned here as well (perhaps we're looking for that line!)
 We need the comment here to specify that we are actually completing the last
 step of a calculation within our print statement.
 
+Trimming Contents
+----------------------------------
+
+Commenting WHY instead of WHAT can be difficult, especially when you're familiar
+with the code. It may be tempting to write vague comments, or even remove them,
+as you work.
+
+However, the purpose of the CSI standard is to inform the programmer who is
+*not* presently familiar with the code. Therefore, we recommend the following:
+
+1. Comment every logical statement while working. No exceptions!
+
+2. Have someone unfamiliar with the code review the comments and suggest
+   improvements. You may be able to do this yourself, if you leave the comments
+   AND code alone for a couple of weeks first.
+
+3. Using the insight from Step 2, rewrite WHAT comments to WHY, and eliminate
+   entirely unnecessary comments.
+
 Types of Comments
 ==================================
 
@@ -412,6 +475,9 @@ CSI-compliant source code should specify the purpose and intent of
 variables and functions. As previously mentioned this can be merged with
 documentation standards, especially because the resulting autodocs will
 be far more usable.
+
+..  NOTE:: If the name of a variable or function fully explains its intent,
+    you may omit the comment as your documentation standard permits.
 
 In these examples, we'll demonstrate combining CSI with a Doxygen-compatible
 doc comment. To that aim, the comments below contain the names of the items
@@ -446,6 +512,7 @@ well as the purpose of the input values, in plain English.
 
 Special Comments
 --------------------------------
+
 Using ``TODO``, ``NOTE``, and ``FIXME`` comments is common practice in
 many languages, and many tools exist that generate lists from these.
 The CSI standard recommends that these types of comments be used, and
@@ -458,6 +525,7 @@ follow the same tone as other comments when possible.
 
 Entry Points
 ------------------------------
+
 Major features should have entry points, which indicate where one should start
 reading the code if they want to follow the entire call stack for a particular
 function or feature. For example, if a game engine has a long process for
@@ -481,6 +549,7 @@ to start".
 
 Commenting Out Code
 -------------------------------
+
 It can be very easy to confuse a regular comment and commented out code.
 There are two ways to clarify this action.
 
@@ -524,8 +593,12 @@ while stating the reasons behind it.
 
 This method is ideal in languages where double-commenting is possible.
 
+**In any case, you should ultimately aim to remove commented-out code as
+soon as possible.**
+
 Top of Document
 ------------------------------
+
 On the top of the document, the programmer should ideally list the project name
 and version, module/class name and description, date last updated,
 and authors (optionally). This may be adjusted to comply with documentation

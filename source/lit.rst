@@ -1,6 +1,10 @@
 Live-In Testing [LIT]
 ############################
 
+**Version:** 1.0.0
+
+**Last Updated:** 2016-05-31
+
 Purpose
 ==========================
 The phrase "unit testing" is far too overreaching, and is linked heavily to
