@@ -14,9 +14,9 @@ File Types
   * Implementation: ``.cpp``
 
 * C
-  
+
   * Headers: ``.h``
-  
+
   * Implementation: ``.c``
 
 The reason behind this is so we can use C and C++ in parallel with one
@@ -86,7 +86,7 @@ Comments
 
   * All functions and variables should have a doc comment at declaration.
 
-  * CSI comment *every logical statement*.
+  * CSI comment *every logical block*.
 
   * Header files and standalone implementation files should *always* have
     CSI-style description and license comments at the top.
@@ -94,7 +94,7 @@ Comments
 * Use ``//`` and ``/* ... */`` for CSI comments.
 
 * When a comment spans multiple lines, prefer multiline ``/* ... */`` comments.
-  We recommend using line-leading ``*``.
+  We recommend using line-leading ``* ``.
 
 ..  code-block:: c++
 
@@ -132,108 +132,6 @@ Structure
 
 * Documentation files should be in the ``docs/`` directory.
 
-Code::Blocks Settings
-------------------------------------------------
-Code can be automatically formatted according to these style conventions by
-the Astyle plugin on Code::Blocks. This plugin can be run from
-:menuselection:`Plugins --> Source Code Formatter`.
-
-To ensure full compliance with these conventions, please adjust the following
-settings at :menuselection:`Settings --> Editor --> Source formatter`. These
-are based on Code::Blocks 16.01.
-
-- Style
-
-  - Bracket Style: Allman (ANSI)
-
-- Brackets
-  
-  - Attach classes: no
-
-  - Attach "extern c": no
-
-  - Attach namespaces: no
-
-  - Attach inlines: no
-
-- Indentation
-
-  - Indentation size (in spaces): 4
-
-  - Use TABs instead of spaces: no
-
-  - Force using TABs: no
-
-  - Indent case: statement switches: YES
-
-  - Indent classes: YES
-
-  - Indent labels: YES
-
-  - Indent modifiers: no
-
-  - Indent namespaces: YES
-
-  - Indent switches: no
-
-  - Indent preprocessor blocks at bracket level zero: no
-
-  - Indent multi-line preprocessor definitions ending with a backslash: no
-
-  - Indent preprocessor conditions: YES
-
-  - Indent C++ comments beginning in column one: no
-
-  - Minimal indent added...: 2
-
-  - Maximum of # spaces to ndent a continuation line...: 40
-
-- Formatting
-
-  - Break closing headers...: YES
-
-  - Break 'else if()' header combinations...: no
-
-  - Add brackets to unbracketed one line conditional statements: YES
-
-  - Remove brackets from conditional statements: no
-
-  - Don't break one-line blocks: YES
-
-  - Don't break complex statements and multiple statements residing...: no
-
-  - Convert TABs to spaces: YES
-
-  - Closes whitespace in the angle bracket of template definitions: YES
-
-  - Remove the preceding '*' in multi-line comment...: no
-
-  - Enable line breaking: YES
-
-  - Break lines after amount of chars...: 80
-
-- Padding
-
-  - Pad empty lines around header blocks: no
-
-  - Insert space padding around operators: YES
-
-  - Insert space padding around parenthesis on the outside: no
-
-  - Insert space padding around parenthesis on the inside: no
-
-  - Insert space padding between a header and the following paren: YES
-
-  - Remove extra space padding around parenthesis: no
-
-  - Delete empty lines within a function or method: no
-
-  - Fill empty lines with the whitespace of their previous lines: no
-
-  - Pointer alignment: Type
-
-  - Reference alignment: Type
-
 Python
 ======================================
 Based on `PEP8 <https://www.python.org/dev/peps/pep-0008>`_ and
@@ -259,20 +157,22 @@ Naming Conventions
 Formatting
 ------------------------------------------------
 
-- Four-space intendation ONLY.
+- Four-space indentation ONLY.
 
 - Avoid code beyond 80 characters. Use ``\`` as necessary to break lines.
 
-- Line up lists so a) the start of list item lines align, and b) the end of
-  list item lines roughly align. Each line should end with either a comma or,
-  in the case of the last line, the closing token.
+- Line up multi-line structures as follows, with the opening and closing
+  brackets on separate lines, and the start of the items lined up. Each
+  item *may* be on its own line, but this is not required.
 
 ..  code-block:: python
 
-    names = ["Bob", "Fred", "Jim",
-             "Chris", "Dave", "Jack",
-             "Ozymandius", "Randall",
-             "Andrew"]
+    names = [
+        "Bob", "Fred", "Jim",
+        "Chris", "Dave", "Jack",
+        "Ozymandius", "Randall",
+        "Andrew"
+    ]
 
 Comments
 ------------------------------------------------
@@ -290,37 +190,7 @@ Comments
 * All files should precede with CSI-style description docstrings and
   license comments.
 
-Other
-------------------------------------------------
-* All Python documents should be syntactically compliant with both Python 2
-  and Python 3 as much as possible.
+Python Code Formatter
+-----------------------------------------------
 
-NINJA-IDE Settings
-------------------------------------------------
-NINJA-IDE automatically ensured that most of the above are complied with.
-However, there are a few customizable settings to look at in
-:menuselection:`Edit --> Preferences --> Editor`.
-
-* Configuration tab
-
-  * Indentation Length: 4 spaces
-
-  * Use TABs: no
-
-  * Margin Line: 80
-
-  * Show Margin Line: YES
-
-  * Use Platform End of Line: no
-
-  * Find and Show Errors: YES
-
-  * Show Tool tip information about the errors: YES
-
-  * Find and Show Check Style errors: YES
-
-  * Show Tool tip information about the PEP8 errors: YES
-
-  * Show Python3 Migration Tips: no
-
-  * Remove Trailing Spaces and add Last Line automatically: YES
+`black` should be used as the code formatter.

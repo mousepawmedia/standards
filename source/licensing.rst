@@ -56,12 +56,6 @@ The `GNU General Public License (GPL v3) <https://opensource.org/licenses/GPL-3.
 is used for libraries which we want to offer under a dual-license setup.
 Other GPL projects may be use GPLv3 code, but no other code may.
 
-.. IMPORTANT:: We plan to discontinue use of the GPL entirely at a later date,
-   in favor of an original and slightly less restrictive license which will
-   not force the propagation of the GPL over other OSI-approved licenses.
-   In the interim, the we use the GPL to protect our code against use by
-   non-open-source projects.
-
 Open Source/Free Software Stance
 ------------------------------------------------
 MousePaw Media completely and publicly endorses the platform and goals of

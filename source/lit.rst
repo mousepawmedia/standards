@@ -59,8 +59,8 @@ teardown
 Implementation
 =======================================
 MousePaw Media' **Golilocks** library (a component of PawLIB) is designed
-specifically for LIT in C++. **Blueshell** (upcoming in PawLIB 1.1) can be
-used to quickly create a run-time interface for Goldilocks.
+specifically for LIT in C++. **GoldilocksShell** (upcoming in PawLIB 1.1) can
+be used to quickly create a run-time interface for Goldilocks.
 
 For other languages, the most important thing to remember about implementing
 an LIT testing framework is that all tests are executed *on-demand* by the
@@ -69,7 +69,8 @@ user *during run-time*.
 General Guidelines
 ========================================
 
-- Each scenario should have a unique code. For example, an Edge Test that
+- If a single test supports multiple scenarios, each scenario should have a
+  unique code. For example, an Edge Test that
   randomly generates six integers for the scenario might also use those six
   integers as its scenario code. ``3.13.9.15.39.779``
 
@@ -267,8 +268,6 @@ the following IDs are used.
 | AP  | Anari: Punchline           |
 +-----+----------------------------+
 | P   | PawLIB                     |
-+-----+----------------------------+
-| Q   | Quicksilver                |
 +-----+----------------------------+
 | R   | Ratscript                  |
 +-----+----------------------------+

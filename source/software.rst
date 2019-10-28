@@ -204,12 +204,17 @@ Text Editor
 * *Emacs* ‡
 * *Sublime* $‡
 
-C++ IDE
+Build Tools
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **CMake**
+
+C/C++ IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **Visual Studio Code**
 * *Atom*
-* *Code::Blocks 16.04*
+* *Code::Blocks*
 * *Geany*
 * *Vim*
 * *Anjuta* ‡
@@ -220,6 +225,27 @@ C++ IDE
 * *Kdevelop* ‡
 * *Netbeans* ‡
 * *Sublime* $‡
+
+C/C++ Debuggers and Dynamic Analysers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **gdb** or **lldb**
+* **Valgrind**
+* KCacheGrind
+* Nemiver
+
+C/C++ Static Analysers and Formatters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **cppcheck**
+* AStyle
+* clang-format
+* *cccc*
+
+C/C++ Testing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Goldilocks**
 
 RestructuredText IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -248,6 +274,33 @@ Python IDE
 * *Spyder* ‡
 * *Sublime* $‡
 
+Python Debuggers and Dynamic Analysers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **pdb**
+* *pudb*
+
+Python Static Analysers and Formatters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **black**
+* **flake8** (includes PyFlakes, pycodestyle, mccabe)
+* **flake8-bandit**
+* **flake8-datetimez**
+* **flake8-docstrings**
+* **flake8-pytest**
+* **flake8-mypy**
+* **flake8-regex**
+* **flake8-requirements**
+* bandit
+* mypy
+* pydocstyle
+
+Python Testing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **pytest**
+
 Version Control Software
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -268,6 +321,7 @@ Operating Systems
 * *Xubuntu*
 * *Arch Linux* ‡
 * *Fedora* ‡
+* *Windows 10 with WSL* ‡
 
 Disallowed Software
 =====================================
@@ -346,15 +400,6 @@ Microsoft Office
 Due to some ODT compatibility issues, and a lack of in-company training and
 support, Microsoft Office is NOT to be used on any company documents.
 
-Microsoft Visual C++ Compiler
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Due to platform limitations, the Microsoft Visual C++ compiler is officially
-disallowed. However, we do permit the use of Clang as the compiler in the
-Visual Studio environment.
-
-Additionally, Visual Studio and Visual Studio Code are both *permitted*.
-
 Trimble SketchUp (formerly Google SketchUp)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -365,4 +410,6 @@ Microsoft Windows
 
 As of 2019, due to revisions in the Terms of Service and Privacy Policies for
 Microsoft, we have lifted the ban on Microsoft Windows. However, **we still
-require Linux for development work**.
+require Linux for development work**. In circumstances where Linux is directly
+uninstallable on a work machine, Windows 10 with Windows Subsystem for Linux
+may be used.
