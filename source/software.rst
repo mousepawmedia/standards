@@ -4,9 +4,15 @@ Software Standards
 Legend
 =====================================
 
-**Mandatory software is in boldface.**
+**Mandatory software is in boldface.** Mandatory software must be installed and configured
+on your machine, and you should be prepared to use it as needed. You *may* use alternatives,
+as long as your work is fully compatible with the mandatory software. Documentation assumes
+you're using the mandatory software, unless otherwise noted. In-house support may be limited
+for workflows with non-mandatory software.
 
-Recommended software is in regular face.
+Recommended alternative software is in regular face. If an alternative to mandatory software
+is needed or desired, we recommend these be considered first. In-house support is still
+generally available.
 
 *Optional alternative software is in italics. In-house support for these is limited.*
 
@@ -89,7 +95,7 @@ Collaborative Editing
 Desktop Publishing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Scribus
+* **Scribus**
 * LibreOffice Writer 6
 * *Calligra Words*
 * *OpenOffice.org Writer* ‡
@@ -144,7 +150,8 @@ Vector Drawing
 Photography
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Darktable
+* **Darktable**
+* *RawTherapee*
 
 Image Conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -240,7 +247,7 @@ C/C++ Static Analysers and Formatters
 * **cppcheck**
 * AStyle
 * clang-format
-* *cccc*
+* cccc
 
 C/C++ Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
