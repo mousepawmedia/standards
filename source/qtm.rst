@@ -1,9 +1,9 @@
 Quantified Task Management [QTM]
 #######################################
 
-**Version:** 1.1.0
+**Version:** 1.2.0
 
-**Last Updated:** 2018-01-12
+**Last Updated:** 2019-10-30
 
 Vision
 ===================================
@@ -41,37 +41,51 @@ Priority
 Priority refers to how soon this task needs to be accomplished. A task can be
 a low priority temporarily, and yet still have a high Gravity.
 
-- **p0: Wishlist.** Tasks that don't necessarily need to be completed.
-- **p1: Eventual.** Lowest priority tasks.
-- **p2: Soonish.** Tasks that don't necessarily need to be completed in
-  the current development cycle.
-- **p3: Normal.**  Tasks that should be completed in the current development
-  cycle, after current ``p4`` and ``p5`` tasks.
-- **p4: Important.** The usual top priority, and whatever is currently
-  being worked on.
 - **p5: Immediate.** Reserved for escalating a task above all other
   priorities; "drop everything and do this!"
+- **p4: Important.** The usual top priority, and whatever is currently
+  being worked on.
+- **p3: Normal.**  Tasks that should be completed in the current development
+  cycle, after current ``p4`` and ``p5`` tasks.
+- **p2: Soonish.** Tasks that don't necessarily need to be completed in
+  the current development cycle.
+- **p1: Eventual.** Tasks which are not slated to be completed in this current
+  development cycle.
+- **p0: Wishlist.** Tasks that don't necessarily need to be completed.
+- **pT: Triage.** Tasks which are not yet prioritized.
 
 .. _qtm_gravity:
 
 Gravity (Importance)
 -----------------------------------
 A task's Gravity is its importance to ensuring the project is stable,
-easy-to-use, and accomplishes all of its intended goals.
+easy-to-use, and accomplishes all of its intended goals. It plays an important
+role in planning. This is the only measure over which a client should have
+*direct* control.
 
 This measure is especially useful when performing a "featurectomy" (removing
 features from a project to expidite it's completion.)
 
-- **g0: Wishlist.** Proposed and unconfirmed tasks.
-- **g1: Trivial.** "Would be nice" tasks; these take backseat to the
-  completion of all other tasks. First to be cut.
-- **g2: Minor.** "Polishing" tasks, bells and whistles. Ideally should be
-  completed, but can be cut if necessary.
-- **g3: Major.** Non-essential, but really should be completed if possible.
-- **g4: Significant.** Must be completed, only cut if desperate.
 - **g5: Critical.** Project can't exist without. Must be completed, period.
+  Should *never* include aesthetic and convenience functionality.
+- **g4: Significant.** Must be completed, only cut if desperate. Includes only
+  functional requirements which directly improve on g5 features.
+  (No bells-and-whistles.)
+- **g3: Major.** Non-essential, but should be completed if time permits.
+  "Polishing" tasks, and the most important bells-and-whistles.
+- **g2: Minor.** Not slated for current release, but may be g4 or g5 for next
+  release.
+- **g1: Trivial.** "Would be nice" tasks; these take backseat to the
+  completion of all other tasks. Should contain only tasks that could reasonably
+  belong in the project at *some point*; this is the pool for selecting g3 tasks
+  for future releases.
+- **g0: Wishlist.** All other tasks which have been properly discussed, but
+  no higher Gravity rating could be determined.
 - **gΣ: Sum of all subtasks.** Use this for umbrella tasks that don't
-  have a gravity of their own.
+  have a Gravity of their own. The Gravity will be the sum of the Gravity scores
+  of its subtasks.
+- **gT: Triage.** Proposed and unconfirmed tasks.
+
 
 .. _qtm_friction:
 
@@ -87,6 +101,8 @@ The following table shows how this could work, rating each aid as Full, Some
 +--------+--------------+----------+-------------+-----------+------------+
 | Rating | Name         | Docs     | Code        | Tutorials | Precedence |
 +========+==============+==========+=============+===========+============+
+| ``fT`` | Triage       | Unknown  | Unknown     | Unknown   | Unknown    |
++--------+--------------+----------+-------------+-----------+------------+
 | ``f0`` | Freeway      | Full     | Full        | Full      | Full       |
 +--------+--------------+----------+-------------+-----------+------------+
 | ``f1`` | Street       | Full     | Full        | Some      | Some       |
@@ -115,6 +131,7 @@ effort the task will require.
 A good rule of thumb: you will know the relativity within the first hour of
 working on a task.
 
+- **rT: Triage.** Relativity not yet determined for task.
 - **r0: No chance of black hole.** No flux.
 - **r1: Low black hole probability.** Probably safe.
 - **r2: Moderate black hole probability.** Some flux, but looks possible
