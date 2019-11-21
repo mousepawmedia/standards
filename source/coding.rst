@@ -53,7 +53,7 @@ Formatting
         bar();
     }
 
-* Limit lines to 80 characters.
+* Avoid code beyond 80 characters. Never exceed 120 characters.
 
 * Indentation should be 4 spaces (soft tabs).
 
@@ -111,9 +111,7 @@ Comments
   * The return description in doc comments should be preceded by ``\return``
     on a new line.
 
-* Use either ``////`` or ``/* ... */`` for commenting out. If the commented-out
-  code will be sent up to the repository, include a CSI comment explaining
-  why the code is commented out.
+* Do not commit commented out code.
 
 * Avoid inline comments whenever possible.
 
@@ -143,25 +141,26 @@ Based on `PEP8 <https://www.python.org/dev/peps/pep-0008>`_ and
 Naming Conventions
 ------------------------------------------------
 
-- Variables: ``lower_with_underscores``
+* Variables: ``lower_with_underscores``
 
-- Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+* Constants: ``ALL_CAPS_WITH_UNDERSCORES``
 
-- Functions: ``lower_with_underscores``
+* Functions: ``lower_with_underscores``
 
-- Classes: ``UpperCamelCase``
+* Classes: ``UpperCamelCase``
 
-- Filenames/Modules: ``lower_with_underscores`` (Underscores discouraged,
+* Filenames/Modules: ``lower_with_underscores`` (Underscores discouraged,
   however. Avoid when possible.)
 
 Formatting
 ------------------------------------------------
 
-- Four-space indentation ONLY.
+* Four-space indentation ONLY.
 
-- Avoid code beyond 80 characters. Use ``\`` as necessary to break lines.
+* Avoid code beyond 80 characters. Use ``\`` as necessary to break lines.
+  Never exceed 120 characters.
 
-- Line up multi-line structures as follows, with the opening and closing
+* Line up multi-line structures as follows, with the opening and closing
   brackets on separate lines, and the start of the items lined up. Each
   item *may* be on its own line, but this is not required.
 
@@ -189,6 +188,8 @@ Comments
 
 * All files should precede with CSI-style description docstrings and
   license comments.
+
+* Do not commit commented out code.
 
 Python Code Formatter
 -----------------------------------------------
