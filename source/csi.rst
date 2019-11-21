@@ -1,7 +1,7 @@
 Commenting Showing Intent [CSI]
 #######################################
 
-**Version:** 1.2.0
+**Version:** 1.2.1
 
 **Last Updated:** 2019-08-26
 
@@ -25,6 +25,10 @@ from its specification.
 
 The CSI Commenting Standard offers a non-language-specific standard
 for writing comments.
+
+..  NOTE:: Intent-Commenting is discussed in detail in an article by
+    Lead Developer Jason C. McDonald entitled
+    `To Comment Or Not To Comment <https://dev.to/codemouse92/to-comment-or-not-to-comment-3f7h>`_
 
 Advantages
 ---------------------------------------

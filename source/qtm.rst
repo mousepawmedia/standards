@@ -1,7 +1,7 @@
 Quantified Task Management [QTM]
 #######################################
 
-**Version:** 1.2.0
+**Version:** 1.2.1
 
 **Last Updated:** 2019-10-30
 
@@ -86,6 +86,9 @@ features from a project to expidite it's completion.)
   of its subtasks.
 - **gT: Triage.** Proposed and unconfirmed tasks.
 
+..  NOTE:: Gravity is discussed in detail in an article by
+    Lead Developer Jason C. McDonald entitled
+    `Three Ground Rules for Sane Project Planning <https://dev.to/codemouse92/three-ground-rules-for-sane-project-planning-37g9>`_
 
 .. _qtm_friction:
 
