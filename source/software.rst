@@ -89,7 +89,8 @@ Math and Formulas
 Collaborative Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Etherpad (DevNet)
+* **Visual Studio Code: Live Share** (text/code only)
+* Etherpad [DevNet] (text/code only)
 * *AbiWord* ‡
 
 Desktop Publishing
@@ -125,7 +126,7 @@ Web Browser
 Emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **VirtualBox**
+* VirtualBox
 
 Graphics Design
 -------------------------------------
@@ -134,6 +135,12 @@ Image Manipulation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **GIMP**
+
+Screenshots
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* FlameshotJS
+* *Shutter*
 
 Raster Graphics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -254,6 +261,11 @@ C/C++ Testing
 
 * **Goldilocks**
 
+Containers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Docker**
+
 RestructuredText IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -262,6 +274,11 @@ RestructuredText IDE
 * *Geany*
 * *Vim*
 * *Brackets* ‡
+
+Collaboration/Pair Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Visual Studio Code: Live Share**
 
 Python IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -292,14 +309,14 @@ Python Static Analysers and Formatters
 
 * **black**
 * **flake8** (includes PyFlakes, pycodestyle, mccabe)
-* **flake8-bandit**
-* **flake8-datetimez**
-* **flake8-docstrings**
-* **flake8-pytest**
-* **flake8-mypy**
-* **flake8-regex**
-* **flake8-requirements**
 * bandit
+* flake8-bandit
+* flake8-datetimez
+* flake8-docstrings
+* flake8-pytest
+* flake8-mypy
+* flake8-regex
+* flake8-requirements
 * mypy
 * pydocstyle
 
