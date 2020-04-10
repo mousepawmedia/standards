@@ -243,17 +243,20 @@ C/C++ IDE
 C/C++ Debuggers and Dynamic Analysers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* **Visual Studio Code** (debugging frontend)
 * **gdb** or **lldb**
+* **KCacheGrind**
 * **Valgrind**
-* KCacheGrind
+* Bless Hex Editor
 * Nemiver
+* Sysprof
 
 C/C++ Static Analysers and Formatters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* **clang-format**
 * **cppcheck**
 * AStyle
-* clang-format
 * cccc
 
 C/C++ Testing
@@ -319,11 +322,13 @@ Python Static Analysers and Formatters
 * flake8-requirements
 * mypy
 * pydocstyle
+* *pylint*
 
 Python Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **pytest**
+* **ward**
 
 Version Control Software
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -427,7 +432,8 @@ support, Microsoft Office is NOT to be used on any company documents.
 Trimble SketchUp (formerly Google SketchUp)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Due to licensing costs, SketchUp may only be used for internal idea drafting.
+Due to licensing costs, SketchUp may only be used for internal idea drafting,
+and is strongly discouraged even for this.
 
 Microsoft Windows
 ----------------------------------------

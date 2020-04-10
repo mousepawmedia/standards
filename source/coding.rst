@@ -25,18 +25,20 @@ another, without confusing what language any given file is written in.
 Naming Conventions
 ------------------------------------------------
 
-* Variables: ``lowerCamelCase``
+* Variables: ``lower_snake_case``
 
-* Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+* Constants: ``SCREAMING_SNAKE_CASE``
 
-* Functions: ``lowerCamelCase``
+* Functions: ``lower_snake_case``
 
 * Classes: ``UpperCamelCase``
 
-* Filenames: ``lower_with_underscores``
+* Filenames: ``lower_snake_case``
 
 Formatting
 ------------------------------------------------
+
+..  NOTE:: We are currently debating whether to switch to OTBS.
 
 * Use Allman bracketing and indentation style.
 
@@ -55,7 +57,8 @@ Formatting
 
 * Avoid code beyond 80 characters. Never exceed 120 characters.
 
-* Indentation should be 4 spaces (soft tabs).
+* Indentation should use tab characters (4 space width), with spaces for
+  further alignment.
 
 * A switch's block should be indented, and each case's block should be
   indented in the same manner.
@@ -67,9 +70,9 @@ Formatting
 ..  code-block:: c++
 
     string names[9] = {"Bob", "Fred", "Jim",
-        "Chris", "Dave", "Jack",
-        "Ozymandius", "Randall",
-        "Andrew"};
+                       "Chris", "Dave", "Jack",
+                       "Ozymandius", "Randall",
+                       "Andrew"};
 
 * Pointer and reference indicators ``*`` and ``&`` should be aligned to the
   type part of the statement, not the name.
@@ -141,15 +144,15 @@ Based on `PEP8 <https://www.python.org/dev/peps/pep-0008>`_ and
 Naming Conventions
 ------------------------------------------------
 
-* Variables: ``lower_with_underscores``
+* Variables: ``lower_snake_case``
 
-* Constants: ``ALL_CAPS_WITH_UNDERSCORES``
+* Constants: ``SCREAMING_SNAKE_CASE``
 
-* Functions: ``lower_with_underscores``
+* Functions: ``lower_snake_case``
 
 * Classes: ``UpperCamelCase``
 
-* Filenames/Modules: ``lower_with_underscores`` (Underscores discouraged,
+* Filenames/Modules: ``lower_snake_case`` (Underscores discouraged,
   however. Avoid when possible.)
 
 Formatting

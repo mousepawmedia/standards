@@ -8,10 +8,10 @@ C++
 ------------------------------------------------
 **Standard:** `C++17 ISO Standard <https://isocpp.org/std/the-standard>`_
 
-**Compiler:** `Clang 7 (7.0 or later) <http://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html>`_
+**Compiler:** `Clang 9 (9.0 or later) <http://releases.llvm.org/9.0.0/tools/clang/docs/ReleaseNotes.html>`_
 or `GNU GCC 7 (7.2 or later) <https://gcc.gnu.org/gcc-7/changes.html>`_
 
-**Windows Compiler:** Clang (see above) or `MSYS2 <http://msys2.github.io/>`_
+**Windows Compiler:** Clang (see above), either native or via WSL.
 
 CSS
 ------------------------------------------------
@@ -33,7 +33,7 @@ Python
 ------------------------------------------------
 **Standard:** `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_
 
-**Version:** `3.8.0 <https://www.python.org/downloads/release/python-380/>`_
+**Version:** `3.7.x <https://www.python.org/downloads/release/python-375/>`_
 
 XML
 ------------------------------------------------
@@ -136,10 +136,10 @@ Support Goals:
 | SoaS                  | 1 GB    | 3      |
 +-----------------------+---------+--------+
 
-..  NOTE::We want to get a version of OSR working on a version of Linux that
-    runs entirely from a USB stick. We can target newer computers with this
-    (i.e. RAM-only). The idea is to make a "bootable" version of the game for
-    users who have Windows 8/8.1/10.
+..  NOTE::We want to get a version of the RATS Game Engine working on a version
+    of Linux that runs entirely from a USB stick. The idea is to make a
+    "bootable" version of the game for users who cannot (or don't want to)
+    install on their main operating system.
 
 **For support consideration:**
 
