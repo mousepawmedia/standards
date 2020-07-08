@@ -166,9 +166,9 @@ stage it was caught in.
 - **v0: Caught in Design phase.** This means the bug was anticipated before
   coding even began.
 - **v1: Caught in Coding phase.** This means the bug was caught before it
-  reached a protected branch, such as ``master``.
+  reached a protected branch, such as ``devel`` .
 - **v2: Caught in SQA (Testing) phase.** This means the bug landed a
-  protected branch, such as ``master``, but was caught before reaching
+  protected branch, such as ``fresh`` , but was caught before reaching
   production.
 - **v3: Caught in Production phase.** This means the bug actually shipped
   to end-users (i.e. it reached ``stable``).
@@ -186,7 +186,7 @@ The second part of Volatility is optional, but may be useful to certain teams.
 - **o2: Originated in SQA (Testing) phase.** For example, if a bugfix made at
   this stage causes another bug to form, this would be the origin.
 - **o3: Originated in Production phase.** This usually means the bug was
-  created during the process of preparing `master` for shipment.
+  created during the process of preparing ``devel`` for shipment.
 
 You can combine these two metrics to get the Adjusted Volatility [AV] score
 for any bug::

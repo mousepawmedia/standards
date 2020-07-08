@@ -25,13 +25,13 @@ Branches
 
 We reserve and protect three branches in our Git repositories:
 
-* ``master`` is for the latest development version.
+* ``devel``  is for the latest development version.
 * ``fresh`` is for the latest testing release.
 * ``stable`` is for the latest stable release.
 
-Any developer can push to ``master`` with an approved code review from a
+Any developer can push to ``devel``  with an approved code review from a
 Trusted developer. However, only a Repository Master can push directly to
-``master``.
+``devel``.
 
 A Repository Master is the only individual who can push to ``fresh`` or
 ``stable``, and thus must be the one to land (commit) any code which passes
@@ -71,7 +71,7 @@ and only ``N`` is incremented.
 ALPHA Versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-ALPHA versions are committed to the ``master`` branch. They are generally
+ALPHA versions are committed to the ``devel``  branch. They are generally
 feature-frozen, and represent candidates for promotion to ``fresh``.
 
 In versioning, ``-alpha.N` is amended for ALPHA-versions, where ``N`` is the
@@ -102,7 +102,7 @@ Additional features *may not be added* to a BETA. Once a version is promoted
 from an ALPHA to a BETA, it should be considered feature-frozen, for better or
 for worse. If the feature is considered to be a blocking feature to the Release,
 the Release cycle should be *abandoned*, and the version kicked back down to
-a development version on ``master``. It will then gain a new Minor release
+a development version on ``devel`` . It will then gain a new Minor release
 number before it is promoted to ALPHA and BETA again.
 
 ..  TODO:: Determine BETA candidacy/testing standards.
