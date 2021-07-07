@@ -1,9 +1,9 @@
 Quantified Task Management [QTM]
 #######################################
 
-**Version:** 1.2.1
+**Version:** 2.0.0
 
-**Last Updated:** 2019-10-30
+**Last Updated:** 2021-07-07
 
 Vision
 ===================================
@@ -31,98 +31,166 @@ Three elusive main goals are needed for efficient project management:
   be able to track important task/bug metrics separately, not mush them all into
   one cover-all term.
 
+What's New in This Version
+--------------------------------
+
+* Clarify Priority.
+* Added Distance.
+* Improve Friction, drop ``f0``.
+* Improve Relativity, drop ``r0``.
+* Add Energy Points.
+
 Measures
 ================================
+
+QTM consists of six measures:
+
+* Priority: How soon?
+* Gravity: How important?
+* Distance: How much effort?
+* Friction: How many available resources?
+* Relativity: How much uncertainty?
+* Volatility: How long did the bug go undiscovered?
+
+Distance, Friction, and Relativity combine into Energy Points, which
+can be used as the points measure for Agile methodologies.
 
 .. _qtm_priority:
 
 Priority
 ---------------------------------
-Priority refers to how soon this task needs to be accomplished. A task can be
-a low priority temporarily, and yet still have a high Gravity.
 
-- **p5: Immediate.** Reserved for escalating a task above all other
+**Priority** refers to **how soon** this task needs to be accomplished.
+A task can be a low priority temporarily, and yet still have a high Gravity.
+
+* **p5: Emergency.** Reserved for escalating a task above all other
   priorities; "drop everything and do this!"
-- **p4: Important.** The usual top priority, and whatever is currently
+
+* **p4: Now.** The usual top priority, and whatever is currently
   being worked on.
-- **p3: Normal.**  Tasks that should be completed in the current development
-  cycle, after current ``p4`` and ``p5`` tasks.
-- **p2: Soonish.** Tasks that don't necessarily need to be completed in
-  the current development cycle.
-- **p1: Eventual.** Tasks which are not slated to be completed in this current
-  development cycle.
-- **p0: Wishlist.** Tasks that don't necessarily need to be completed.
-- **pT: Triage.** Tasks which are not yet prioritized.
+
+* **p3: Next.**  Tasks that should be completed in the current sprint,
+  after current ``p4`` and ``p5`` tasks.
+
+* **p2: Later.** Tasks that might not be completed in the current sprint.
+
+* **p1: Eventual.** Tasks which are not slated for the current sprint.
+
+* **p0: Wishlist.** Tasks that don't necessarily need to be completed.
+
+* **pT: Triage.** Tasks which are not yet prioritized.
+
+If you're using a more traditional Kanban board, you may be able to skip
+implementing Priority.
 
 .. _qtm_gravity:
 
 Gravity (Importance)
 -----------------------------------
-A task's Gravity is its importance to ensuring the project is stable,
-easy-to-use, and accomplishes all of its intended goals. It plays an important
-role in planning. This is the only measure over which a client should have
-*direct* control.
 
-This measure is especially useful when performing a "featurectomy" (removing
-features from a project to expidite it's completion.)
+A task's **Gravity** is its **importance to project goals**, including
+stability and ease-of-use. It plays an important role in planning. This is
+the only measure over which a client should have *direct* control.
 
-- **g5: Critical.** Project can't exist without. Must be completed, period.
+This measure is especially useful when selecting features for removal to
+expedite project completion.
+
+* **g5: Critical.** Project can't exist without. Must be completed, period.
   Should *never* include aesthetic and convenience functionality.
-- **g4: Significant.** Must be completed, only cut if desperate. Includes only
+
+* **g4: Significant.** Must be completed, only cut if desperate. Includes only
   functional requirements which directly improve on g5 features.
   (No bells-and-whistles.)
-- **g3: Major.** Non-essential, but should be completed if time permits.
+
+* **g3: Major.** Non-essential, but should be completed if time permits.
   "Polishing" tasks, and the most important bells-and-whistles.
-- **g2: Minor.** Not slated for current release, but may be g4 or g5 for next
+
+* **g2: Minor.** Not slated for current release, but may be g4 or g5 for next
   release.
-- **g1: Trivial.** "Would be nice" tasks; these take backseat to the
+
+* **g1: Trivial.** "Would be nice" tasks; these take backseat to the
   completion of all other tasks. Should contain only tasks that could reasonably
   belong in the project at *some point*; this is the pool for selecting g3 tasks
   for future releases.
-- **g0: Wishlist.** All other tasks which have been properly discussed, but
+
+* **g0: Wishlist.** All other tasks which have been properly discussed, but
   no higher Gravity rating could be determined.
-- **gΣ: Sum of all subtasks.** Use this for umbrella tasks that don't
+
+* **gΣ: Sum of all subtasks.** Use this for umbrella tasks that don't
   have a Gravity of their own. The Gravity will be the sum of the Gravity scores
   of its subtasks.
-- **gT: Triage.** Proposed and unconfirmed tasks.
+
+* **gT: Triage.** Proposed and unconfirmed tasks.
 
 ..  NOTE:: Gravity is discussed in detail in an article by
     Lead Developer Jason C. McDonald entitled
     `Three Ground Rules for Sane Project Planning <https://dev.to/codemouse92/three-ground-rules-for-sane-project-planning-37g9>`_
 
+.. _qtm_distance:
+
+Distance (Effort)
+-----------------------------------
+
+**Distance** is a measure of **how much effort** it would take to complete
+a task, *given full domain knowledge*. The qualifier is important, as it
+allows developers to achieve consensus on Distance despite differences in
+their knowledge and skill level.
+
+Distance measures effort in terms of time frame relative to the team's
+sprint length, although it should be understood that *effort* is being
+measured, rather than the timeframe itself. This is not a deadline.
+
+* **d5: Exceeds Sprint.** Indicates task should almost certainly be broken
+  down into subtasks.
+
+* **d4: Within Sprint.**
+
+* **d3: Within Half-Sprint.**
+
+* **d2: Within Quarter-Sprint.** For sprints longer than two weeks, this can
+  also be "Within Week".
+
+* **d1: Within Session.** Work can be completed in one sitting.
+
+* **dT: Triage Distance.**
+
+There is no ``d0`` because all work requires some degree of effort.
+
 .. _qtm_friction:
 
 Friction (Available Help)
 -----------------------------------
+
 Friction is a quantified measure of difficulty, based on how many resources
-are available to help complete a task. This does not involve the person's
-actual experience, as that varies from person to person.
+are available to help complete a task, versus how much innovation (new
+invention and experiementation) will be needed. The overall health of the
+source code — good practice, patterns, clean coding — should also be taken
+into account.
 
-The following table shows how this could work, rating each aid as Full, Some
-(similar to goal), Little (dissimilar to goal), or None.
+Friction should always be objective and empirical; it should never involve
+the developer's actual experience level.
 
-+--------+--------------+----------+-------------+-----------+------------+
-| Rating | Name         | Docs     | Code        | Tutorials | Precedence |
-+========+==============+==========+=============+===========+============+
-| ``fT`` | Triage       | Unknown  | Unknown     | Unknown   | Unknown    |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f0`` | Freeway      | Full     | Full        | Full      | Full       |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f1`` | Street       | Full     | Full        | Some      | Some       |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f2`` | Back Road    | Full     | Some/Little | Little    | Little     |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f3`` | Trail        | Some     | Little      | None      | Little     |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f4`` | Trailblazing | Little   | None        | None      | None       |
-+--------+--------------+----------+-------------+-----------+------------+
-| ``f5`` | Bushwhacking | None     | None        | None      | None       |
-+--------+--------------+----------+-------------+-----------+------------+
+* **f5: Jungle.** Uncharted territory. You're on your own.
+
+* **f4: Trail.** Little precendence and/or documentation. Mostly innovation,
+  or work occurs in particularly unhealthy source code.
+
+* **f3: Off-Road.** Some precendence and/or documentation. Work might occur
+  in unhealthy source code, or significant innovation is required.
+
+* **f2: Street.** Good precedence and/or documentation. Work likely occurs in
+  healthy source code. Some innovation may still be required.
+
+* **f1: Highway.** Low-skill tasks, tutorial-guided work, fixing typos.
+  Work occurs in healthy source code.
+
+There is no ``f0``, as all work involves some friction.
 
 .. _qtm_relativity:
 
-Relativity/Black Hole Probability (Uncertainty)
+Relativity (Uncertainty)
 ----------------------------------------------------------
+
 It can be easy to predict how much effort and time will go into a task, or
 it can be very hard. We can call this uncertainty "flux". Relativity is
 essentially a measure of how much flux is present in a task, and conversely,
@@ -134,25 +202,65 @@ effort the task will require.
 A good rule of thumb: you will know the relativity within the first hour of
 working on a task.
 
-- **rT: Triage.** Relativity not yet determined for task.
-- **r0: No chance of black hole.** No flux.
-- **r1: Low black hole probability.** Probably safe.
-- **r2: Moderate black hole probability.** Some flux, but looks possible
-  to complete.
-- **r3: High black hole probability.** Still possible to complete,
-  but take caution.
-- **r4: Almost-definite black hole.** Completion possible, but unlikely.
-- **r5: Collapsing.** Bail out NOW. Task needs to be abandoned or
-  re-factored - it is virtually impossible in its current state.
+* **r5: Collapsing/Black Hole.** Total flux. Task needs to be abandoned
+  or re-factored, as it is virtually impossible in its current state.
 
-..  NOTE:: Relativity and flux are discussed in detail in an article by
-    Lead Developer Jason C. McDonald entitled
+* **r4: High.** Significant flux. Completion possible, but unlikely.
+
+* **r3: Moderate.** Moderate flux. Completion within sprint is uncertain.
+
+* **r2: Low.** Some flux, but completion within sprint is likely.
+
+* **r1: Trivial.** Very little flux. Probably safe.
+
+* **rT: Triage.** Relativity not yet determined for task.
+
+There is no ``r0``, as one can virtually never say that a task is truly
+without flux.
+
+..  NOTE:: Relativity and flux (QTM v1) are discussed in detail in the article
     `Gallifreyan Software Project Management <https://dev.to/codemouse92/gallifreyan-software-project-management-29a1>`_
+
+.. _qtm_energy:
+
+Energy Points
+---------------------------------------------------------
+
+QTM can be used to inform the "points" used in Agile methodologies.
+When the points are determined this way, they are known as **Energy Points**,
+or just **Energy**.
+
+The following formula is used to calculate Energy:
+
+..  code-block:: text
+
+    energy = (distance + friction) * relativity
+
+A task's Energy score is a combination of direct effort (distance),
+research and experimentation effort (friction), and the task's
+uncertainty (relativity).
+
+Over time, a developer will get used to how Energy maps to their individual
+time and effort on a team. A more senior member of the team will be able to
+complete more Energy Points worth of tasks in a work session than a junior
+team member, in general.
+
+Higher Energy tasks will also likely require more focus than lower Energy
+tasks, even those of longer overall duration, due to Relativity. This fact
+informs a developer when selecting work from the backlog to complete.
+For example, if a developer is selecting work to do in the half hour before
+a meeting, they would probably find they could make more meaningful progress on
+an Energy 7 task than an Energy 25 task, even if both had the same Distance.
+
+Finally, Energy is a good way to control how much work is selected for a
+Sprint, because it explicitly takes Relativity and Friction into account,
+rather than just overall effort.
 
 .. _qtm_volatility:
 
 Volatility
 ----------------------------------------------------------
+
 Cumulatively, Volatility measures how late in the development process bugs are
 being caught. This can be used to spot issues in software quality processes,
 and to provide an estimation of software stability.
@@ -161,31 +269,39 @@ Volatility has two parts, although only one is absolutely necessary. The first
 is the Volatility measure on the bug itself, indicating what development
 stage it was caught in.
 
-- **vN: Not a bug.** Feature requests and other non-bug issues should
+* **vN: Not a bug.** Feature requests and other non-bug issues should
   *always* have this rating (or else ``v0`` if you can't implement ``vN``.)
-- **v0: Caught in Design phase.** This means the bug was anticipated before
+
+* **v0: Caught in Design phase.** This means the bug was anticipated before
   coding even began.
-- **v1: Caught in Coding phase.** This means the bug was caught before it
+
+* **v1: Caught in Coding phase.** This means the bug was caught before it
   reached a protected branch, such as ``devel`` .
-- **v2: Caught in SQA (Testing) phase.** This means the bug landed a
+
+* **v2: Caught in SQA (Testing) phase.** This means the bug landed a
   protected branch, such as ``fresh`` , but was caught before reaching
   production.
-- **v3: Caught in Production phase.** This means the bug actually shipped
+
+* **v3: Caught in Production phase.** This means the bug actually shipped
   to end-users (i.e. it reached ``stable``).
 
 The second part of Volatility is optional, but may be useful to certain teams.
 *Origin* indicates which development stage the bug originated at.
 
-- **oN: Not a bug/Unknown** This should be used for non-bug issues, and
+* **oN: Not a bug/Unknown** This should be used for non-bug issues, and
   also if the origin cannot be determined.
-- **o0: Originated in Design phase.** This usually means the bug is a logic
+
+* **o0: Originated in Design phase.** This usually means the bug is a logic
   error or impossible expectation that formed during the pre-coding Design
   process.
-- **o1: Originated in Coding phase.** Almost all bugs are created during the
+
+* **o1: Originated in Coding phase.** Almost all bugs are created during the
   actual code-writing process.
-- **o2: Originated in SQA (Testing) phase.** For example, if a bugfix made at
+
+* **o2: Originated in SQA (Testing) phase.** For example, if a bugfix made at
   this stage causes another bug to form, this would be the origin.
-- **o3: Originated in Production phase.** This usually means the bug was
+
+* **o3: Originated in Production phase.** This usually means the bug was
   created during the process of preparing ``devel`` for shipment.
 
 You can combine these two metrics to get the Adjusted Volatility [AV] score
