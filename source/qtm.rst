@@ -184,6 +184,8 @@ the developer's actual experience level.
 * **f1: Highway.** Low-skill tasks, tutorial-guided work, fixing typos.
   Work occurs in healthy source code.
 
+* **dT: Triage Friction.**
+
 There is no ``f0``, as all work involves some friction.
 
 .. _qtm_relativity:
