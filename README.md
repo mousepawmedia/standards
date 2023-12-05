@@ -6,15 +6,11 @@ ongoing software development efforts. These standards are
 made freely available for the benefit of the open source
 community, and the programming community at large.
 
-The most notable of these standards include:
-
- - CSI: Commenting Showing Intent
- - QTM: Quantified Task Management
-
 More information can be found on the [Standards][1] page.
 
 Standards Format
--------------
+--------------------------
+
 The standards are all written in RestructuredText format,
 to be compatible with Sphinx. The root of the repository contains
 a makefile which can be used to generate the documents.
@@ -52,13 +48,6 @@ Feedback
 These standards are written and maintained by the
 MousePaw Media Standards Board. Feedback is welcome
 via email (developers@mousepawmedia.com).
-
-You can also frequently find us in the #mousepawmedia
-channel on Freenode.
-
-Pull requests to this repository are not accepted. If
-you wish to propose a change, email your patch to us
-at the address above.
 
 For more information about contributing to MousePaw Media
 projects, see [mousepawmedia.com/opensource][2].
