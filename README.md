@@ -9,7 +9,6 @@ community, and the programming community at large.
 The most notable of these standards include:
 
  - CSI: Commenting Showing Intent
- - LIT: Live-In Testing
  - QTM: Quantified Task Management
 
 More information can be found on the [Standards][1] page.

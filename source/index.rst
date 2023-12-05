@@ -25,7 +25,6 @@ These standards are intended for general use.
    :maxdepth: 2
 
    csi
-   lit
    qtm
 
 In-House Standards
