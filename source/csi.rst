@@ -144,7 +144,7 @@ application of the CSI Commenting Standard avoids both of these problems.
 Format
 ========================================
 
-C-Based Languages
+ALGOL-Based Languages
 ---------------------------------------
 For readability, CSI comments should use single-line comments only for
 single-line statements. If more than one line is required, multi-line
