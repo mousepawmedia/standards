@@ -193,19 +193,14 @@ Naming Conventions
 Formatting
 ------------------------------------------------
 
-..  NOTE:: We are currently debating whether to switch to OTBS.
-
-* Use Allman bracketing and indentation style.
+- Use OTBS bracketing and indentation style.
 
 ..  code-block:: c++
 
-    if (x == y)
-    {
+    if (x == y) {
         x++;
         foo();
-    }
-    else
-    {
+    } else {
         x--;
         bar();
     }
