@@ -81,12 +81,12 @@ any language.
 However, "Self-Commenting Code" is seldom capable of expressing the entire
 intent, or "why", of the code.
 
-* It is nearly impossible to express the *intended* behavior of the code;
+- It is nearly impossible to express the *intended* behavior of the code;
 only the *actual* behavior is evident, which can conceal logic errors.
 
-* Code cannot imply the reason the current approach was taken over another.
+- Code cannot imply the reason the current approach was taken over another.
 
-* Code can seldom self-express its purpose in its larger context. Even attempting
+- Code can seldom self-express its purpose in its larger context. Even attempting
 to do so can lead to impractically long function and class names.
 
 The CSI Standard should exist *alongside* Self-Commenting Code practices, not
