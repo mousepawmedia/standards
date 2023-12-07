@@ -15,17 +15,33 @@ The standards are all written in RestructuredText format,
 to be compatible with Sphinx. The root of the repository contains
 a makefile which can be used to generate the documents.
 
-On a Unix system, you can use the following commands:
+Building
+----------------------------------
 
-    $ make html # Create HTML version.
-    $ make latex # Create LaTEX version.
-    $ make latexpdf # Create PDF via LaTEX.
-    $ make man # Create man pages.
-    $ make epub # Create e-book.
+You must have Python 3 installed on your system, and you need to create a
+virtual environment. On UNIX-based systems, you can run:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r source/requirements.txt
+```
+
+Then you can run one of the following `make` commands:
+
+```bash
+make html # Create HTML version.
+make latex # Create LaTEX version.
+make latexpdf # Create PDF via LaTEX.
+make man # Create man pages.
+make epub # Create e-book.
+```
 
 There are additional make targets as well. To see the complete list, simply run...
 
-    $ make
+```bash
+make
+```
 
 Standards Board
 -------------------------
