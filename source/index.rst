@@ -13,6 +13,7 @@ MousePaw Media Standards
    coding
    git
    licensing
+   qtm
    software
    technical
 

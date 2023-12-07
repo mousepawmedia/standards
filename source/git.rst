@@ -26,7 +26,9 @@ Git Strategies
 Collaboration Workflow
 ---------------------------------------------
 
-..  sidebar:: There are three reasons we do not exclusively use the trunk-based
+..  sidebar::
+
+    There are three reasons we do not exclusively use the trunk-based
     development strategy. First, our development cycles are slow, since our
     development team is entirely volunteer-based, so ongoing development of new
     features could easily block stability fixes to the current stable release.
@@ -39,9 +41,9 @@ For testing and release purposes, we use the
 `Gitflow <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>`_,
 strategy. We reserve and protect three branches in our Git repositories:
 
-- ``devel``  is for the latest development version.
-- ``fresh`` is for the latest release candidate.
-- ``stable`` is for the latest stable release.
+- :code:`devel`  is for the latest development version.
+- :code:`fresh` is for the latest release candidate.
+- :code:`stable` is for the latest stable release.
 
 For development purposes, however, we still use
 `trunk-based development <https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development>`_
@@ -62,7 +64,7 @@ rebased against :code:`devel` with `git rebase devel` before being merged.
 We merge with fast-forward only (:code:`ff-only`), meaning we never create
 dedicated merge commits.
 
-Since we enforce Conventional Commits (see :ref:`git_commit`), we do NOT
+Since we enforce Conventional Commits (see :ref:`git_commits`), we do NOT
 squash commits.
 
 ..  _git_commits:
@@ -107,7 +109,7 @@ the commit should relate to the purpose and the commit type. Where possible,
 all related changes with a given purpose and type should be grouped into a
 single commit.
 
-..  _git_commits_changeset::
+..  _git_commits_changeset:
 
 The Changeset Approach
 --------------------------------------------
@@ -212,33 +214,37 @@ related.
 
 Every Merge Request must…
 
-1. Accomplish the goals(s) it was designed to accomplish.
+1.  Accomplish the goals(s) it was designed to accomplish.
 
-2. Comply with Conventional Commits for all commit messages.
+2.  Comply with Conventional Commits for all commit messages.
 
-3. Be rebased against the latest version of devel (or whatever branch is targeted), and all conflicts resolved (:code:`$ git pull origin devel `). (We do NOT use the “squash” or “merge” Git strategies.)
+3.  Be rebased against the latest version of devel (or whatever branch is
+    targeted), and all conflicts resolved (:code:`$ git pull origin devel`).
+    (We do NOT use the "squash" or "merge" Git strategies.)
 
-4. Have binaries and unnecessary cruft untracked and removed. (Keep an eye on .gitignore!)
+4.  Have binaries and unnecessary cruft untracked and removed. (Keep an eye on .gitignore!)
 
-5. Compile and run properly. (Confirmed via the CI/CD Pipeline.)
+5.  Compile and run properly. (Confirmed via the CI/CD Pipeline.)
 
-6. Be free of compiler errors and warnings; for C++, must compile with -Wall -Wextra -Werror. (Confirmed via the CI/CD Pipeline.)
+6.  Be free of compiler errors and warnings; for C++, must compile with
+    :code:`-Wall -Wextra -Werror`. (Confirmed via the CI/CD Pipeline.)
 
-7. For C++, be Valgrind pure, meaning no memory leaks are detected. (Confirmed via the CI/CD Pipeline.)
+7.  For C++, be Valgrind pure, meaning no memory leaks are detected. (Confirmed via the CI/CD Pipeline.)
 
-8. Comply with Coding and Technical standards.
+8.  Comply with Coding and Technical standards.
 
-9. Include tests validating the accomplishment of goals in (1). These tests must be written in the project’s test framework, if relevant.
+9.  Include tests validating the accomplishment of goals in (1). These tests
+    must be written in the project's test framework, if relevant.
 
-10. Be fully Commenting-Showing Intent commented.
+10.  Be fully Commenting-Showing Intent commented.
 
-11. Have an up-to-date build script (generally CMake) if relevant.
+11.  Have an up-to-date build script (generally CMake) if relevant.
 
-12. Be reviewed, built, tested, and approved by at least one trusted reviewer.
+12.  Be reviewed, built, tested, and approved by at least one trusted reviewer.
 
-13. Have up-to-date Sphinx documentation, which compiles with no warnings.
+13.  Have up-to-date Sphinx documentation, which compiles with no warnings.
 
-14. Have all reviewer comments processed and marked “Done”.
+14.  Have all reviewer comments processed and marked "Done".
 
 ..  _git_versioning:
 
@@ -247,11 +253,11 @@ Versioning
 
 Starting from January 2020, we use `Semantic Versioning 2.0.0 <https://semver.org/>`_
 for all software development projects. Our version numbers follow the format
-``X.Y.Z``
+:code:`X.Y.Z`
 
-- ``X`` is a major release, reserved for changes to the API or CLI.
-- ``Y`` is a minor release, for releases with new features.
-- ``Z`` is a patch release, for bugfix-only releases.
+- :code:`X` is a major release, reserved for changes to the API or CLI.
+- :code:`Y` is a minor release, for releases with new features.
+- :code:`Z` is a patch release, for bugfix-only releases.
 
 We use Commitizen to automatically generate semantic versions from Conventional
 Commit messages.
@@ -259,14 +265,14 @@ Commit messages.
 ..  _git_versioning_zero:
 
 About Zero-Versions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------
 
-Zero-Versions are versions at Major Release ``0``. They are considered
+Zero-Versions are versions at Major Release :code:`0`. They are considered
 inherently unstable and feature incomplete, and thereby un-releasable. They
-cannot be promoted to either ``fresh`` or ``stable``.
+cannot be promoted to either :code:`fresh` or :code:`stable`.
 
 A project remains at a Zero-Version until it is considered complete and
-stable enough to promote to version ``1``.
+stable enough to promote to version :code:`1`.
 
 To enforce this rule, projects at version zero should **NEVER** have
 :code:`BREAKING CHANGE` commits. When it is time to promote the project

@@ -9,15 +9,15 @@ File Types
 
 - C++
 
-  - Headers: ``.hpp``
+  - Headers: :code:`.hpp`
 
-  - Implementation: ``.cpp``
+  - Implementation: :code:`.cpp`
 
 - C
 
-  - Headers: ``.h``
+  - Headers: :code:`.h`
 
-  - Implementation: ``.c``
+  - Implementation: :code:`.c`
 
 The reason behind this is so we can use C and C++ in parallel with one
 another, without confusing what language any given file is written in.
@@ -25,15 +25,15 @@ another, without confusing what language any given file is written in.
 Naming Conventions
 ------------------------------------------------
 
-- Variables: ``lower_snake_case``
+- Variables: :code:`lower_snake_case`
 
-- Constants: ``SCREAMING_SNAKE_CASE``
+- Constants: :code:`SCREAMING_SNAKE_CASE`
 
-- Functions: ``lower_snake_case``
+- Functions: :code:`lower_snake_case`
 
-- Classes: ``UpperCamelCase``
+- Classes: :code:`UpperCamelCase`
 
-- Filenames: ``lower_snake_case``
+- Filenames: :code:`lower_snake_case`
 
 Formatting
 ------------------------------------------------
@@ -69,17 +69,18 @@ Formatting
                        "Ozymandius", "Randall",
                        "Andrew"};
 
-- Pointer and reference indicators ``*`` and ``&`` should be aligned to the
+- Pointer and reference indicators :code:`*` and :code:`&` should be aligned to the
   type part of the statement, not the name.
 
 - Insert space padding around operators.
 
-- Insert space padding after parenthesis headers (after ``if``, ``switch``, etc.)
+- Insert space padding after parenthesis headers (after :code:`if`, :code:`switch`, etc.)
 
-- One-line blocks (i.e. one line ``if`` statements) should still have brackets.
+- One-line blocks (i.e. one line :code:`if` statements) should still have brackets.
 
 Comments
 ------------------------------------------------
+
 - Use CSI Commenting Standard.
 
   - All functions and variables should have a doc comment at declaration.
@@ -89,10 +90,10 @@ Comments
   - Header files and standalone implementation files should *always* have
     CSI-style description and license comments at the top.
 
-- Use ``//`` and ``/* ... */`` for CSI comments.
+- Use :code:`//` and :code:`/* ... */` for CSI comments.
 
-- When a comment spans multiple lines, prefer multiline ``/* ... */`` comments.
-  We recommend using line-leading ``* ``.
+- When a comment spans multiple lines, prefer multiline :code:`/* ... */`
+  comments. We recommend using line-leading :code:`*`.
 
 ..  code-block:: c++
 
@@ -101,32 +102,33 @@ Comments
      * See how nice this looks?
      */
 
-- Use ``///`` and ``/** ... */`` for doc comments.
+- Use :code:`///` and :code:`/** ... */` for doc comments.
 
-  - Each parameter description in doc comments should be preceded by ``\param``
-    on a new line.
+  - Each parameter description in doc comments should be preceded by
+    :code:`\param` on a new line.
 
-  - The return description in doc comments should be preceded by ``\return``
-    on a new line.
+  - The return description in doc comments should be preceded by
+    :code:`\return` on a new line.
 
 - Do not commit commented out code.
 
 - Avoid inline comments whenever possible.
 
-- Use ``//TODO``, ``//NOTE``, and ``//FIXME`` notation where necessary.
+- Use :code:`//TODO`, :code:`//NOTE`, and :code:`//FIXME` notation where
+  necessary.
 
 Structure
 ------------------------------------------------
 
-- ``main.c`` and ``main.cpp`` should reside in the root directory.
+- :code:`main.c` and :code:`main.cpp` should reside in the root directory.
 
-- ``.h`` and ``.hpp`` files should be in an the ``include/`` directory. For
-  libraries, header files should be in a ``<project>`` subfolder (i.e.
-  ``include/anari/`` or ``include/pawlib/``).
+- :code:`.h` and :code:`.hpp` files should be in an the :code:`include/` directory. For
+  libraries, header files should be in a :code:`<project>` subfolder (i.e.
+  :code:`include/anari/` or :code:`include/pawlib/`).
 
-- ``.c`` and ``.cpp`` files should be in the ``src/`` directory.
+- :code:`.c` and :code:`.cpp` files should be in the :code:`src/` directory.
 
-- Documentation files should be in the ``docs/`` directory.
+- Documentation files should be in the :code:`docs/` directory.
 
 Python
 ======================================
@@ -139,15 +141,15 @@ Based on `PEP8 <https://www.python.org/dev/peps/pep-0008>`_ and
 Naming Conventions
 ------------------------------------------------
 
-- Variables: ``lower_snake_case``
+- Variables: :code:`lower_snake_case`
 
-- Constants: ``SCREAMING_SNAKE_CASE``
+- Constants: :code:`SCREAMING_SNAKE_CASE`
 
-- Functions: ``lower_snake_case``
+- Functions: :code:`lower_snake_case`
 
-- Classes: ``UpperCamelCase``
+- Classes: :code:`UpperCamelCase`
 
-- Filenames/Modules: ``lower_snake_case`` (Underscores discouraged,
+- Filenames/Modules: :code:`lower_snake_case` (Underscores discouraged,
   however. Avoid when possible.)
 
 Formatting
@@ -155,7 +157,7 @@ Formatting
 
 - Four-space indentation ONLY.
 
-- Avoid code beyond 80 characters. Use ``\`` as necessary to break lines.
+- Avoid code beyond 80 characters. Use :code:`\\` as necessary to break lines.
   Never exceed 120 characters.
 
 - Line up multi-line structures as follows, with the opening and closing
@@ -178,11 +180,11 @@ Comments
 
 - Please avoid inline comments. Comment above lines.
 
-- Use single line comments when possible. (``#``)
+- Use single line comments when possible. (:code:`#`)
 
 - Please comply with the CSI Commenting Standard as much as possible.
 
-- Use ``#TODO``, ``#NOTE``, and ``#FIXME`` notation where necessary.
+- Use :code:`#TODO`, :code:`#NOTE`, and :code:`#FIXME` notation where necessary.
 
 - All files should precede with CSI-style description docstrings and
   license comments.

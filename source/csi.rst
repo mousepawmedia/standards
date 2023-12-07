@@ -82,12 +82,12 @@ However, "Self-Commenting Code" is seldom capable of expressing the entire
 intent, or "why", of the code.
 
 - It is nearly impossible to express the *intended* behavior of the code;
-only the *actual* behavior is evident, which can conceal logic errors.
+  only the *actual* behavior is evident, which can conceal logic errors.
 
 - Code cannot imply the reason the current approach was taken over another.
 
 - Code can seldom self-express its purpose in its larger context. Even attempting
-to do so can lead to impractically long function and class names.
+  to do so can lead to impractically long function and class names.
 
 The CSI Standard should exist *alongside* Self-Commenting Code practices, not
 *instead of*.
@@ -230,7 +230,7 @@ to an average C++ developer.
 
 Now we know *WHY* the code is here - we're dividing our items among
 the boxes. We also know that this line isn't intended to handle the
-extra items (thus why we are using ``floor()``).
+extra items (thus why we are using :code:`floor()`).
 
 If you imagine a lone maintainer looking to change this code to divide
 the items among any number of boxes, the comment would make his change
@@ -370,7 +370,7 @@ block of code in plain English.
 
 This attempts to pack entirely too much information into one comment,
 which slows us down. We now have to stop and determine what
-``sum += nums[i]`` is doing, based on the big comment. It is also
+:code:`sum += nums[i]` is doing, based on the big comment. It is also
 lengthier than it needs to be.
 
 **BEST**
@@ -395,7 +395,7 @@ lengthier than it needs to be.
     return sum;
 
 By spreading out the comments, we can see the intention behind each
-piece of code. ``sums += nums[i]`` is obviously adding the number
+piece of code. :code:`sums += nums[i]` is obviously adding the number
 we found to our running sum.
 
 Spreading out comments also helps to ensure they are kept up-to-date. One of
@@ -437,7 +437,7 @@ and still be CSI-compliant.
     print(get_status(render_engine))
 
 This line is a little harder to parse, unless you know that our theoretical
-function ``get_status()`` queries the object's status, and returns it as
+function :code:`get_status()` queries the object's status, and returns it as
 a string. Even if we surmised that much, we might not know that error codes
 are returned here as well (perhaps we're looking for that line!)
 
@@ -517,7 +517,7 @@ well as the purpose of the input values, in plain English.
 Special Comments
 --------------------------------
 
-Using ``TODO``, ``NOTE``, and ``FIXME`` comments is common practice in
+Using :code:`TODO`, :code:`NOTE`, and :code:`FIXME` comments is common practice in
 many languages, and many tools exist that generate lists from these.
 The CSI standard recommends that these types of comments be used, and
 follow the same tone as other comments when possible.
