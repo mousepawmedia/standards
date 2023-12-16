@@ -6,31 +6,42 @@ ongoing software development efforts. These standards are
 made freely available for the benefit of the open source
 community, and the programming community at large.
 
-The most notable of these standards include:
-
- - CSI: Commenting Showing Intent
- - LIT: Live-In Testing
- - QTM: Quantified Task Management
-
 More information can be found on the [Standards][1] page.
 
 Standards Format
--------------
+--------------------------
+
 The standards are all written in RestructuredText format,
 to be compatible with Sphinx. The root of the repository contains
 a makefile which can be used to generate the documents.
 
-On a Unix system, you can use the following commands:
+Building
+----------------------------------
 
-    $ make html # Create HTML version.
-    $ make latex # Create LaTEX version.
-    $ make latexpdf # Create PDF via LaTEX.
-    $ make man # Create man pages.
-    $ make epub # Create e-book.
+You must have Python 3 installed on your system, and you need to create a
+virtual environment. On UNIX-based systems, you can run:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r source/requirements.txt
+```
+
+Then you can run one of the following `make` commands:
+
+```bash
+make html # Create HTML version.
+make latex # Create LaTEX version.
+make latexpdf # Create PDF via LaTEX.
+make man # Create man pages.
+make epub # Create e-book.
+```
 
 There are additional make targets as well. To see the complete list, simply run...
 
-    $ make
+```bash
+make
+```
 
 Standards Board
 -------------------------
@@ -53,13 +64,6 @@ Feedback
 These standards are written and maintained by the
 MousePaw Media Standards Board. Feedback is welcome
 via email (developers@mousepawmedia.com).
-
-You can also frequently find us in the #mousepawmedia
-channel on Freenode.
-
-Pull requests to this repository are not accepted. If
-you wish to propose a change, email your patch to us
-at the address above.
 
 For more information about contributing to MousePaw Media
 projects, see [mousepawmedia.com/opensource][2].

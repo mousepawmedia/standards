@@ -32,101 +32,101 @@ Office Software
 Office Suites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **LibreOffice 6**
-* *Calligra*
-* *OpenOffice.org* ‡
+- **LibreOffice 6**
+- *Calligra*
+- *OpenOffice.org* ‡
 
 Documents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **LibreOffice Writer 6**
-* *AbiWord*
-* *Calligra Words*
-* *OpenOffice.org Writer* ‡
+- **LibreOffice Writer 6**
+- *AbiWord*
+- *Calligra Words*
+- *OpenOffice.org Writer* ‡
 
 Spreadsheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **LibreOffice Calc 6**
-* *Calligra Sheets*
-* *OpenOffice.org Calc* ‡
+- **LibreOffice Calc 6**
+- *Calligra Sheets*
+- *OpenOffice.org Calc* ‡
 
 Presentations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **LibreOffice Impress 6**
-* *Calligra Stage*
-* *OpenOffice.org Impress* ‡
+- **LibreOffice Impress 6**
+- *Calligra Stage*
+- *OpenOffice.org Impress* ‡
 
 Flowcharts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Dia**
-* LibreOffice Draw 6
-* *Calligra Flow*
-* *OpenOffice.org Draw* ‡
+- **Dia**
+- LibreOffice Draw 6
+- *Calligra Flow*
+- *OpenOffice.org Draw* ‡
 
 Office Database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **LibreOffice Base 6**
-* *Calligra Kexi*
-* *OpenOffice.org Base* ‡
+- **LibreOffice Base 6**
+- *Calligra Kexi*
+- *OpenOffice.org Base* ‡
 
 PDF Annotation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Xournal**
+- **Xournal**
 
 Math and Formulas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LibreOffice Math 6
-* GeoGebra
-* ZeGrapher
-* *OpenOffice.org Math* ‡
+- LibreOffice Math 6
+- GeoGebra
+- ZeGrapher
+- *OpenOffice.org Math* ‡
 
 Collaborative Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code: Live Share** (text/code only)
-* Etherpad [DevNet] (text/code only)
-* *AbiWord* ‡
+- **Visual Studio Code: Live Share** (text/code only)
+- Etherpad [DevNet] (text/code only)
+- *AbiWord* ‡
 
 Desktop Publishing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Scribus**
-* LibreOffice Writer 6
-* *Calligra Words*
-* *OpenOffice.org Writer* ‡
+- **Scribus**
+- LibreOffice Writer 6
+- *Calligra Words*
+- *OpenOffice.org Writer* ‡
 
 Mindmapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Calligra Braindump
-* Freemind
+- Calligra Braindump
+- Freemind
 
 Desktop Email Client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Evolution
-* Thunderbird
-* *Geary*
+- Evolution
+- Thunderbird
+- *Geary*
 
 Web Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Brave
-* Firefox
-* *Chromium*
-* *Opera*
-* *Vivaldi*
+- Brave
+- Firefox
+- *Chromium*
+- *Opera*
+- *Vivaldi*
 
 Emulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* VirtualBox
+- VirtualBox
 
 Graphics Design
 -------------------------------------
@@ -134,50 +134,50 @@ Graphics Design
 Image Manipulation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **GIMP**
+- **GIMP**
 
 Screenshots
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* FlameshotJS
-* *Shutter*
+- FlameshotJS
+- *Shutter*
 
 Raster Graphics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* GIMP
-* Krita (Calligra)
+- GIMP
+- Krita (Calligra)
 
 Vector Drawing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Inkscape**
-* *Calligra Karbon*
+- **Inkscape**
+- *Calligra Karbon*
 
 Photography
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Darktable**
-* *RawTherapee*
+- **Darktable**
+- *RawTherapee*
 
 Image Conversion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Converseen
+- Converseen
 
 3D Design
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Blender**
+- **Blender**
 
 Video Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Kdenlive**
-* *Shotcut*
-* *Pitvi*
-* *OpenShot*
-* *Roxio NXT Creator 2* $
+- **Kdenlive**
+- *Shotcut*
+- *Pitvi*
+- *OpenShot*
+- *Roxio NXT Creator 2* $
 
 Audio/Music
 --------------------------------------
@@ -185,22 +185,22 @@ Audio/Music
 Recording and Editing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Audacity**
-* *Ardour DAW*
-* *Apple GarageBand* $†
+- **Audacity**
+- *Ardour DAW*
+- *Apple GarageBand* $†
 
 Music Creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* LMMS
-* Hydrogen
-* Garritan $†
-* *Apple GarageBand* $†
+- LMMS
+- Hydrogen
+- Garritan $†
+- *Apple GarageBand* $†
 
 Music Score
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **MuseScore**
+- **MuseScore**
 
 Programming
 ---------------------------------------
@@ -208,149 +208,149 @@ Programming
 Text Editor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code**
-* Atom
-* Geany
-* *KATE*
-* *Nano*
-* *Vim*
-* *Brackets* ‡
-* *Emacs* ‡
-* *Sublime* $‡
+- **Visual Studio Code**
+- Atom
+- Geany
+- *KATE*
+- *Nano*
+- *Vim*
+- *Brackets* ‡
+- *Emacs* ‡
+- *Sublime* $‡
 
 Build Tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **CMake**
+- **CMake**
 
 C/C++ IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code**
-* *Atom*
-* *Code::Blocks*
-* *Geany*
-* *Vim*
-* *Anjuta* ‡
-* *Brackets* ‡
-* *CodeLite* ‡
-* *Eclipse CDT* ‡
-* *Emacs* ‡
-* *Kdevelop* ‡
-* *Netbeans* ‡
-* *Sublime* $‡
+- **Visual Studio Code**
+- *Atom*
+- *Code::Blocks*
+- *Geany*
+- *Vim*
+- *Anjuta* ‡
+- *Brackets* ‡
+- *CodeLite* ‡
+- *Eclipse CDT* ‡
+- *Emacs* ‡
+- *Kdevelop* ‡
+- *Netbeans* ‡
+- *Sublime* $‡
 
 C/C++ Debuggers and Dynamic Analysers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code** (debugging frontend)
-* **gdb** or **lldb**
-* **KCacheGrind**
-* **Valgrind**
-* Bless Hex Editor
-* Nemiver
-* Sysprof
+- **Visual Studio Code** (debugging frontend)
+- **gdb** or **lldb**
+- **KCacheGrind**
+- **Valgrind**
+- Bless Hex Editor
+- Nemiver
+- Sysprof
 
 C/C++ Static Analysers and Formatters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **clang-format**
-* **cppcheck**
-* AStyle
-* cccc
+- **clang-format**
+- **cppcheck**
+- AStyle
+- cccc
 
 C/C++ Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Goldilocks**
+- **Goldilocks**
 
 Containers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Docker**
+- **Docker**
 
 RestructuredText IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code**
-* *Atom*
-* *Geany*
-* *Vim*
-* *Brackets* ‡
+- **Visual Studio Code**
+- *Atom*
+- *Geany*
+- *Vim*
+- *Brackets* ‡
 
 Collaboration/Pair Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code: Live Share**
+- **Visual Studio Code: Live Share**
 
 Python IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Visual Studio Code**
-* *Atom*
-* *Geany*
-* *NINJA-IDE*
-* *PyCharm Community Edition*
-* *Vim*
-* *Aptana* ‡
-* *Brackets* ‡
-* *Emacs* ‡
-* *Eric* ‡
-* *Pydev* ‡
-* *Kdevelop* ‡
-* *Spyder* ‡
-* *Sublime* $‡
+- **Visual Studio Code**
+- *Atom*
+- *Geany*
+- *NINJA-IDE*
+- *PyCharm Community Edition*
+- *Vim*
+- *Aptana* ‡
+- *Brackets* ‡
+- *Emacs* ‡
+- *Eric* ‡
+- *Pydev* ‡
+- *Kdevelop* ‡
+- *Spyder* ‡
+- *Sublime* $‡
 
 Python Debuggers and Dynamic Analysers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **pdb**
-* *pudb*
+- **pdb**
+- *pudb*
 
 Python Static Analysers and Formatters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **black**
-* **flake8** (includes PyFlakes, pycodestyle, mccabe)
-* bandit
-* flake8-bandit
-* flake8-datetimez
-* flake8-docstrings
-* flake8-pytest
-* flake8-mypy
-* flake8-regex
-* flake8-requirements
-* mypy
-* pydocstyle
-* *pylint*
+- **black**
+- **flake8** (includes PyFlakes, pycodestyle, mccabe)
+- bandit
+- flake8-bandit
+- flake8-datetimez
+- flake8-docstrings
+- flake8-pytest
+- flake8-mypy
+- flake8-regex
+- flake8-requirements
+- mypy
+- pydocstyle
+- *pylint*
 
 Python Testing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **pytest**
-* **ward**
+- **pytest**
+- **ward**
 
 Version Control Software
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **Git**
-* **Arcanist**
-* **Meld**
-* Git Cola
+- **Git**
+- **Arcanist**
+- **Meld**
+- Git Cola
 
 Operating Systems
 -------------------------------------
 
-* Ubuntu
-* *Debian*
-* *Kubuntu*
-* *Linux Mint*
-* *Lubuntu*
-* *Ubuntu Studio*
-* *Xubuntu*
-* *Arch Linux* ‡
-* *Fedora* ‡
-* *Windows 10 with WSL* ‡
+- Ubuntu
+- *Debian*
+- *Kubuntu*
+- *Linux Mint*
+- *Lubuntu*
+- *Ubuntu Studio*
+- *Xubuntu*
+- *Arch Linux* ‡
+- *Fedora* ‡
+- *Windows 10 with WSL* ‡
 
 Disallowed Software
 =====================================

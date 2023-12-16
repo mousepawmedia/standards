@@ -5,3 +5,6 @@ build/
 .pk
 .pem
 .pub
+
+# Ignore virtual environments
+*env/
